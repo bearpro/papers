@@ -72,7 +72,7 @@ _Аннотация_
 
 ## Деонтические логики
 
-**Деонтические логики** предназначены для формализации понятий обязательства, разрешения и запрета посредством модальной логики. Стандартная деонтическая логика (SDL) вводит модальные операторы типа $O$ (обязательно) и $P$ (разрешено) для выражения нормативных утверждений [13]. Например, формула $O \space p$ интерпретируется как «должно быть, что $p$ истинно», $P \space p$ – «разрешено, чтобы $p$ было истинно» (то есть $\neg O \space \neg p$). Такие логики задают базовую семантическую основу для рассуждений о нормах. Однако традиционная деонтическая логика сталкивается с известными парадоксами при описании норм с исключениями и условных обязанностей [23].
+**Деонтические логики** предназначены для формализации понятий обязательства, разрешения и запрета посредством модальной логики. Стандартная деонтическая логика (SDL) вводит модальные операторы типа $O$ (обязательно) и $P$ (разрешено) для выражения нормативных утверждений [13]. Например, формула $O \ p$ интерпретируется как «должно быть, что $p$ истинно», $P \  p$ – «разрешено, чтобы $p$ было истинно» (то есть $\neg O \  \neg p$). Такие логики задают базовую семантическую основу для рассуждений о нормах. Однако традиционная деонтическая логика сталкивается с известными парадоксами при описании норм с исключениями и условных обязанностей [23].
 
 Для преодоления этих ограничений были разработаны расширения деонтических логик. Один из подходов – введение условных обязанностей и иерархий норм, позволяющее специфицировать нормы вида «если $A$, то должно $B$; если не $B$, то должно $C$». Другой важный шаг – использование не монотонных, опровержимых правил, то есть дефизибельной деонтической логики. Defeasible Deontic Logic (DDL) опирается на идею, что обязательства и запреты могут иметь исключения и приоритеты [14, 15]. В таких системах некоторые нормы могут превосходить другие: при конфликте норм более специфичная или приоритетная норма отменяет действие общей нормы, тем самым разрешая противоречия. Формально исключения моделируются через так называемые defeaters – правила-исключения, которые при наступлении определенных условий блокируют или изменяют исходное обязательство. Наличие таких дефизибельных правил позволяет системе выразить нормы с оговорками и особые случаи, что повышает реалистичность модели нормативных документов. Тем не менее, сами по себе базовые деонтические логики (включая SDL и большинство ее расширений) не обладают выраженными средствами моделирования времени. Они фокусируются на логических связях между фактами и обязанностями, но не описывают динамику выполнения обязательств во времени (например, крайние сроки или последовательность событий).
 
@@ -127,19 +127,15 @@ DDL-LTLf — это дефезибельная деонтическая логи
 
    - Трасса  
      Конечная трасса длины $K$ — это последовательность  
-     $
-     \begin{equation}\nonumber
-     \pi = s_0 s_1 \dots s_{K-1}, \qquad s_t \subseteq AP
-     \end{equation}
-     $
+     $$
+       \pi = s_0 s_1 \dots s_{K-1}, \qquad s_t \subseteq AP
+     $$
 
    - Формулы LTLf.  
      Формулы строятся из атомов $p\in AP$ с помощью булевых связок и темпоральных операторов LTLf:  
-     $
-     \begin{equation}\nonumber
-     X, U, F, G.
-     \end{equation}
-     $
+     $$
+      X, U, F, G.
+     $$
      Их истинность на конечных трассах задаётся стандартной семантикой LTLf [8].
 
 2. Деонтические операторы.
@@ -162,53 +158,46 @@ DDL-LTLf — это дефезибельная деонтическая логи
    - Defeater $ \varphi \rightsquigarrow O\psi $  
      Такая норма блокирует вывод требования другой дефизибельной нормы, не порождая новых требований (для таких норм считаем $ \psi \equiv ⊤ $).
    
-   Норма $r$ применима к трассе $\pi$, если $ \pi \models \varphi $.  
+   Норма $r$ применима к трассе $\pi$, если $\pi \models \varphi$.  
    Множество применимых норм обозначается
-   $
-     \begin{equation}\nonumber
+   $$
      \mathrm{App}_N(\pi) = \{ r \in N \mid \pi \models \varphi_r \}
-     \end{equation}
-   $
+   $$
 
 4. Приоритеты и поражение норм.  
-   Для определдения множества победивших норм $ \mathrm{Win}_N $ на трасе $\pi$ применяются следующие правила к $ \mathrm{App}_N $
+   Для определдения множества победивших норм $\mathrm{Win}_N$ на трасе $\pi$ применяются следующие правила к $\mathrm{App}_N$
    - Строгие нормы не могут быть поражены
    - Между нормами определено отношение приоритета $r_1 \succ r_2$.
-   - Дефизибельная норма поражается (её требование перестаёт участвовать в выводе), если существует применимая норма более высокого приоритета с конфликтующим (несовместимым) требованием, ((??)при которой выполняется условие $ \psi_{j \succ i }$)
+   - Дефизибельная норма поражается (её требование перестаёт участвовать в выводе), если существует применимая норма более высокого приоритета с конфликтующим (несовместимым) требованием, ((??)при которой выполняется условие $\psi_{j \succ i }$)
    - Defeater блокирует дефизибельные нормы, не порождая деонтических требований
 
    Таким образом
-   $
-      \begin{equation}\nonumber
+   $$
       r_i \in \mathrm{Win}_N(\pi) \Leftrightarrow 
       (\pi \models \varphi_i) \land \forall (r_j \succ r_i) \in D 
          \colon \neg (\pi \models \varphi_j \land \psi_{j \succ i})
-      \end{equation}
-   $
+   $$
 
    <!-- Нужно что-то сделать с D! Определение вводится позже -->
    
 5. Семантика DDL-LTLf - деонтическое требование трасы.  
    Пусть дан набор норм $N$ и трасса $\pi$.  
    Для каждого $r\in \mathrm{Win}_N(\pi)$ с заключением $O\psi_r$ требование $\psi_r$ должно быть истинно на трассе: 
-   $ \pi \models \bigwedge_{r\in \mathrm{Win}_N(\pi)} \psi_r $.
+   $\pi \models \bigwedge_{r\in \mathrm{Win}_N(\pi)} \psi_r$.
 
 6. Противоречие в DDL-LTLf.
    - Набор норм $N$ называется непротиворечивым, если существует конечная трасса $\pi$, такая что  
-     $
-     \begin{equation}\nonumber
-     \pi \models \bigwedge_{r\in \mathrm{Win}_N(\pi)} \psi_r.
-     \end{equation}
-     $  
+     $$
+         \exists \pi\colon\quad
+         \pi \models \bigwedge_{r\in \mathrm{Win}_N(\pi)} \psi_r
+     $$, 
      То есть найдётся «нормативно корректная» трасса, удовлетворяющая всем непобеждённым деонтическим требованиям.
 
    - Набор норм $N$ называется противоречивым, если такой трассы не существует:  
-     $
-     \begin{equation}\nonumber
-     \forall \pi\colon\quad
-     \pi \not\models \bigwedge_{r\in \mathrm{Win}_N(\pi)} \psi_r.
-     \end{equation}
-     $
+     $$
+         \nexists \pi\colon\quad
+         \pi \models \bigwedge_{r\in \mathrm{Win}_N(\pi)} \psi_r
+     $$.
 
 <!-- всё выше внимательно вычитано и приведено в согласованый вид -->
 
@@ -228,36 +217,22 @@ DDL-LTLf — это дефезибельная деонтическая логи
 Фиксируем максимальную длину трассы $K \ge 1$.  
 
 Вводим множество булевых переменных  
-$
-   \begin{equation}\nonumber
+$$
    \mathit{Var}_K = \{p_t \mid p \in AP, t = 0,\dots,K-1 \}
-   \end{equation}
-$  
+$$  
 где $p_t$ интерпретируется как «атом $p$ истиннен в момент $t$».  
 
 Каждой формуле LTLf $\chi$ сопоставляем булеву формулу
-$
-   \begin{equation}\nonumber
+$$
    \llbracket \chi \rrbracket_{t}^{K}
-   \end{equation}
-$  
+$$  
 над переменными $\mathit{Var}_K$, которая истинна при некоторой оценке $\nu$ тогда и только тогда, когда соответствующая трасса $\pi^\nu$ удовлетворяет $\chi$ в момент $t$ в стандартной LTLf-семантике [8]. Рекурсивное определение:
 
 - $\llbracket p \rrbracket_{t}^{K} \equiv p_t$
 - $\llbracket \neg \chi \rrbracket_{t}^{K} \equiv \neg \llbracket \chi \rrbracket_{t}^{K}$
-- $
-  \llbracket \chi_1 \wedge \chi_2 \rrbracket_{t}^{K} \equiv {{\llbracket \chi_1 \rrbracket_{t}^ {K}} \wedge {\llbracket \chi_2 \rrbracket_{t}^{K}}}
-  $
-- $
-   \llbracket X\chi \rrbracket_{t}^{K} \equiv 
-   \begin{cases}
-   \llbracket \chi \rrbracket_{t+1}^{K}, & t < K-1\\
-   \bot, & t = K-1
-   \end{cases}
-  $
-- $
-  \llbracket \chi_1 U \chi_2 \rrbracket_{t}^{K} \equiv \bigvee\limits_{u=t}^{K-1} \left(\llbracket  \chi_2 \rrbracket_{u}^{K} \wedge \bigwedge\limits_{v=t}^{u-1} \llbracket \chi_1 \rrbracket_{v}^  {K} \right)
-  $;
+- $\llbracket \chi_1 \wedge \chi_2 \rrbracket_{t}^{K} \equiv {{\llbracket \chi_1 \rrbracket_{t}^ {K}} \wedge {\llbracket \chi_2 \rrbracket_{t}^{K}}}$
+- $\llbracket X\chi \rrbracket_{t}^{K} \equiv \begin{cases} \llbracket \chi \rrbracket_{t+1}^{K}, & t < K-1\\ \bot, & t = K-1 \end{cases}$
+- $\llbracket \chi_1 U \chi_2 \rrbracket_{t}^{K} \equiv \bigvee\limits_{u=t}^{K-1} \left(\llbracket  \chi_2 \rrbracket_{u}^{K} \wedge \bigwedge\limits_{v=t}^{u-1} \llbracket \chi_1 \rrbracket_{v}^  {K} \right)$
 - $F\chi \equiv \top U \chi$, $G \chi \equiv \neg F \neg \chi$ и т.д.
 
 Для краткости далее будем писать $\chi^{K}$ вместо $\llbracket \chi \rrbracket_{0}^{K}$ — кодирование формулы, оцениваемой в начальный момент трассы.  
@@ -266,71 +241,58 @@ $
 ### 2. Определение множества норм и переменных меток
 
 Пусть имеется множество норм  
-$
-   \begin{equation}\nonumber
+$$
    N = {r_1,\dots,r_n}
-   \end{equation}
-$
+$$
 
 Каждой норме $r_i$ сопоставляем булеву метку $\lambda_i$, интерпретируемую как «норма $r_i$ принадлежит $\mathrm{Win}_N(\pi)$».  
 
 Таким образом,  
-$
-   \begin{equation}\nonumber
+$$
    r_i \equiv (\lambda_i, \varphi_i^{K},\psi_i^{K}), \qquad i=1,\dots,n.
-   \end{equation}
-   $  
+$$  
 Для любого множества норм $S \subseteq N$ обозначим  
-$
-   \begin{equation}\nonumber
+$$
    \Lambda_S := \bigwedge_{r_i \in S} \lambda_i.
-   \end{equation}
-$
+$$
 
 ### 3. Кодирование поражения (дефезибельности и приоритетов)
 
 Пусть задано множество пар
-$
-   \begin{equation}\nonumber
+$$
    D \subseteq N \times N
-   \end{equation}
-$
+$$
 где каждая пара $(r_j, r_i)\in D$ читается как
 
-$
-   \begin{equation}\nonumber
-   r_j \succ r_i \space \text{при условии} \space \psi_{j \succ i}
-   \end{equation}
-$
+$$
+   r_j \succ r_i \  \text{при условии} \  \psi_{j \succ i}
+$$
 
 Здесь $\psi_{j\succ i}$ — формула LTLf, кодирование которой на горизонте $K$ мы обозначим $\psi_{j\succ i}^{K}$.
 Интуиция: **поражение определяется применимостью**: если $r_i$ выбрана победителем и при этом существует применимая норма более высокого приоритета, для которой выполняется условие поражения, то $r_i$ не может быть победителем.
 (Для строгих норм по определению поражения не бывает; соответственно, пары $(r_j,r_i)$ для строгих $r_i$ в $D$ не включаются. Defeater’ы кодируются тем же образом через $D$, но сами не порождают требований; см. п.5 ниже.)
 
-Для отдельной пары $(r_j, r_i)$ зафиксируем булеву формулу
-$
-   \begin{align}
+Для отдельной пары $(r_j, r_i)$ зафиксируем булеву формулу (1)
+$$
    \Delta_{j \succ i}^{K} := \neg\Bigl(
    \lambda_i \land \varphi_j^{K} \land \psi_{j \succ i}^{K} \Bigr)
    \tag{1}
-   \end{align}
-$
+$$
 которая запрещает одновременную истинность «$r_i$ победила», «$r_j$ применима» и «условие поражения выполняется».
 
 Кроме того, требуется исключить тривиальный выбор всех меток $\lambda_i=\bot$ и зафиксировать, что победителями становятся **все** применимые нормы, которые не поражены. Для этого для каждой нормы $r_i$ добавим ограничение максимальности:
-$
-\begin{align}\nonumber
-\Gamma_i^{K} :=
-\Bigl(
-\varphi_i^{K} \land
-\bigwedge_{(r_j \succ r_i) \in D} \neg(\varphi_j^{K} \land \psi_{j\succ i}^{K})
-\Bigr) \rightarrow \lambda_i.
-\end{align}
-$
+$$
+   \begin{align}\nonumber
+   \Gamma_i^{K} :=
+   \Bigl(
+   \varphi_i^{K} \land
+   \bigwedge_{(r_j \succ r_i) \in D} \neg(\varphi_j^{K} \land \psi_{j\succ i}^{K})
+   \Bigr) \rightarrow \lambda_i
+   \end{align}
+$$
 
-Для всего множества $D$ получаем конъюнкцию:
-$
-   \begin{align}
+Для всего множества $D$ получаем конъюнкцию (формула 2):
+$$
    \Delta^{K} :=
    \left(
    \bigwedge_{(r_j \succ r_i) \in D} \Delta_{j \succ i}^{K}
@@ -338,69 +300,58 @@ $
    \land
    \left(
    \bigwedge_{i=1}^{n} \Gamma_i^{K}
-   \right).
+   \right)
    \tag{2}
-   \end{align}
-$
+$$
 Таким образом, в любой модели $\Delta^{K}$ метки $\lambda_i$ задают ровно множество победивших норм на данной трассе: норма помечена победителем тогда и только тогда, когда она применима и не поражена ни одной применимой нормой более высокого приоритета (включая defeater’ы, если соответствующие пары включены в $D$).
 
 ### 4. Кодирование применимости норм и их «активации»
 
-Для каждой нормы $r_i$ с предпосылкой $\varphi_i$ определим:
-$
-   \begin{align}
+Для каждой нормы $r_i$ с предпосылкой $\varphi_i$ определим (формула 3):
+$$
    B_i^{K} := \lambda_i \land \varphi_i^{K}, \qquad i = 1,\dots,n.
    \tag{3}
-   \end{align}
-$
+$$
 Интуиция: если $\lambda_i$ истинна, то $\varphi_i$ обязана выполняться (норма может быть победителем только если она применима).
 
-Совокупная формула применимости:
-$
-   \begin{align}
+Совокупная формула применимости (4):
+$$
    B^{K} :=
    \bigwedge_{i=1}^{n}\bigl(
    \lambda_i \rightarrow \varphi_i^{K} \bigr) \equiv
    \bigwedge_{i=1}^{n} \bigl(
-   \neg\lambda_i \lor \varphi_i^{K} \bigr).
+   \neg\lambda_i \lor \varphi_i^{K} \bigr)
    \tag{4}
-   \end{align}
-$
+$$
 
 ### 5. Кодирование деонтических требований победивших норм
 
-Теперь явно кодируем, что если норма $r_i$ победила ($\lambda_i$ истинна), то её деонтическое требование $\psi_i$ должно выполняться на трассе:
-$
-   \begin{align}
+Теперь явно кодируем, что если норма $r_i$ победила ($\lambda_i$ истинна), то её деонтическое требование $\psi_i$ должно выполняться на трассе (формула 5):
+$$
    C_i^{K} := \lambda_i \rightarrow \psi_i^{K},
-   \qquad i = 1,\dots,n.
+   \qquad i = 1,\dots,n
    \tag{5}
-   \end{align}
-$
+$$
 
 Замечание: для defeater’ов, которые не порождают новых требований, принимаем соглашение $\psi_i \equiv \top$ (и, следовательно, $\psi_i^{K}\equiv \top$), так что ограничения $C_i^{K}$ для таких норм не накладывают условий на трассу.
 
-Совокупная формула деонтических требований:
-$
-   \begin{align}
+Совокупная формула деонтических требований (6):
+$$
    C^{K} :=
    \bigwedge_{i=1}^{n} C_i^{K} \equiv
    \bigwedge_{i=1}^{n} \bigl(
-   \lambda_i \rightarrow \psi_i^{K} \bigr).
+   \lambda_i \rightarrow \psi_i^{K} \bigr)
    \tag{6}
-   \end{align}
-$
+$$
 Таким образом, каждая метка $\lambda_i$ «подтягивает» выполнение соответствующего обязательства $\psi_i$ на всей трассе.
 
 ### 6. Итоговая булева формула
 
-Итоговое кодирование набора норм $N$ на горизонте $K$ задаётся формулой
-$
-   \begin{align}
+Итоговое кодирование набора норм $N$ на горизонте $K$ задаётся формулой (7):
+$$
    F_N^{K} := \Delta^{K} \land B^{K} \land C^{K}.
    \tag{7}
-   \end{align}
-$
+$$
 
 Переменные формулы $F_N^{K}$ — это:
 
@@ -414,74 +365,59 @@ $
 Рассмотрим упрощённый пример без темпоральных операторов (LTLf вырождается в булеву логику):
 Пусть
 
-- $ N = \{r_1, r_2\} $
-- $ r_1 \colon \varphi_1 = x,\quad O\psi_1 = O(x) $
-- $ r_2 \colon \varphi_2 = \neg x,\quad O\psi_2 = O(\neg x)$
-- $ r_2 \succ r_1$ при условии $y$
+- $N = \{r_1, r_2\}$
+- $r_1 \colon \varphi_1 = x,\quad O\psi_1 = O(x)$
+- $r_2 \colon \varphi_2 = \neg x,\quad O\psi_2 = O(\neg x)$
+- $r_2 \succ r_1$ при условии $y$
 
 Тогда, следуя (2), (4), (6):
 
 1. Кодирование поражения (запрет победы побеждённой нормы):
-   $
-   \begin{align}\nonumber
-   \Delta_{2 \succ 1} := \neg\bigl(\lambda_1 \land (\neg x) \land y\bigr)
-   \end{align}
-   $
+   $$
+      \Delta_{2 \succ 1} := \neg\bigl(\lambda_1 \land (\neg x) \land y\bigr)
+   $$
    и ограничения максимальности:
-   $
-   \begin{align}\nonumber
-   \Gamma_1 := \bigl(x \land \neg((\neg x)\land y)\bigr)\rightarrow \lambda_1,
-   \qquad
-   \Gamma_2 := (\neg x)\rightarrow \lambda_2.
-   \end{align}
-   $
+   - $\Gamma_1 := \bigl(x \land \neg((\neg x)\land y)\bigr)\rightarrow \lambda_1$
+   - $\Gamma_2 := (\neg x)\rightarrow \lambda_2$
+
    Таким образом,
-   $
-      \begin{align}\nonumber
-      \Delta := \Delta_{2 \succ 1}\land \Gamma_1 \land \Gamma_2.
-      \end{align}
-   $
+   $$
+      \Delta := \Delta_{2 \succ 1}\land \Gamma_1 \land \Gamma_2
+   $$
 
 2. Применимость:
-   $
-      \begin{align}\nonumber
+   $$
       B^{K} = (\lambda_1 \rightarrow x) \land (\lambda_2 \rightarrow \neg x)
-      \end{align}
-   $
+   $$
 
 3. Деонтические требования:
-   $
-      \begin{align}\nonumber
+   $$
       C^{K} = (\lambda_1 \rightarrow x) \land (\lambda_2 \rightarrow \neg x),
-      \end{align}
-   $
-   (в данном примере предпосылки и заключения совпадают, из чего следует $ B^K = C^K $).
+   $$
+   (в данном примере предпосылки и заключения совпадают, из чего следует $B^K = C^K$).
 
 Итоговая формула:
-$
-   \begin{align}\nonumber
+$$
    F_{N}^{K} =
    \Delta
    \land
    (\lambda_1 \rightarrow x)
    \land
    (\lambda_2 \rightarrow \neg x).
-   \end{align}
-$
-Дальше SAT-решатель проверяет, существует набор значений для $(x,y,\lambda_1,\lambda_2)$, делающий $F_{N}^{K}$ истинной. Неразрешимость этой формулы означает противоречивость норм $ {r_1,r_2} $ на заданном горизонте.
+$$
+Дальше SAT-решатель проверяет, существует набор значений для $(x,y,\lambda_1,\lambda_2)$, делающий $F_{N}^{K}$ истинной. Неразрешимость этой формулы означает противоречивость норм ${r_1,r_2}$ на заданном горизонте.
 
 ## Теорема о равенстве задач
 
 **Теорема.**  
-Пусть $N$ — конечный набор норм $ \text{DDL-LTL}_f $, $K \ge 1$ — фиксированный горизонт, а $F_N^{K}$ — булева формула, построенная по правилам (1)–(7). Тогда:
+Пусть $N$ — конечный набор норм $\text{DDL-LTL}_f$, $K \ge 1$ — фиксированный горизонт, а $F_N^{K}$ — булева формула, построенная по правилам (1)–(7). Тогда:
 
 1. Если $F_N^{K}$ разрешима, то $N$ непротиворечив на горизонте $K$:
    существует трасса $\pi$ длины $K$ и множество победивших норм
-   $
-      \begin{equation}\nonumber
+   $$
+      \exists \pi\colon\quad
       \pi \models \bigwedge_{r\in \mathrm{Win}_N(\pi)} \psi_r.
-      \end{equation}
-   $
+   $$
 
 2. Если $F_N^{K}$ неразрешима, то $N$ противоречив на горизонте $K$:
    не существует ни одной трассы $\pi$ длины $K$, удовлетворяющей всем деонтическим требованиям победивших норм.
@@ -491,77 +427,53 @@ $
 **Доказательство.**  
 **(1) Корректность**: из модели $F_N^{K}$ получаем нормативную модель.
 Пусть $F_N^{K}$ разрешима, и $\nu$ — некоторая оценка всех переменных $\mathit{Var}_K$ и $\lambda_i$, при которой
-$
-\nu \models F_N^{K}.
-$
+$\nu \models F_N^{K}$.
 
-1. По значениям переменных $p_t$ строим трассу $\pi^\nu = s_0 \dots s_{K-1}$, где
-   $
-   s_t = { p\in AP \mid \nu(p_t) = \text{истина}}
-   $
+1. По значениям переменных $p_t$ строим трассу $\pi^\nu = s_0 \dots s_{K-1}$, где  
+   $s_t = { p\in AP \mid \nu(p_t) = \text{истина}}$
 
-2. По значениям меток определим
-   $
-   W^\nu = { r_i \in N \mid \nu(\lambda_i) = \text{истина} }
-   $
+2. По значениям меток определим  
+   $W^\nu = { r_i \in N \mid \nu(\lambda_i) = \text{истина} }$
 
-3. Из $\nu \models B^{K}$ имеем для каждого $i$:
-   $
-   \nu \models (\lambda_i \rightarrow \varphi_i^{K})
-   $
+3. Из $\nu \models B^{K}$ имеем для каждого $i$:  
+   $\nu \models (\lambda_i \rightarrow \varphi_i^{K})$  
    Если $\nu(\lambda_i) = \text{истина}$, то $\nu \models \varphi_i^{K}$, а по корректности кодирования LTLf получаем
-   $
-   \pi^\nu \models \varphi_i.
-   $
-   Значит, все нормы из $W^\nu$ применимы на $\pi^\nu$; то есть
-   $
-   W^\nu \subseteq \mathrm{App}_N(\pi^\nu).
-   $
+   $\pi^\nu \models \varphi_i$.  
+   Значит, все нормы из $W^\nu$ применимы на $\pi^\nu$; то есть  
+   $W^\nu \subseteq \mathrm{App}_N(\pi^\nu)$.
 
-4. Из $\nu \models C^{K}$ имеем, что для каждого $r_i \in W^\nu$:
-   $
-   \nu \models \psi_i^{K},
-   $
-   и, следовательно,
-   $
-   \pi^\nu \models \psi_i.
-   $
-   Отсюда:
-   $
-   \pi^\nu \models \bigwedge\limits_{r_i\in W^\nu} \psi_i.
-   $
+4. Из $\nu \models C^{K}$ имеем, что для каждого $r_i \in W^\nu$:  
+   $\nu \models \psi_i^{K}$,  
+   и, следовательно,  
+   $\pi^\nu \models \psi_i$.  
+   Отсюда:  
+   $\pi^\nu \models \bigwedge\limits_{r_i\in W^\nu} \psi_i$.
 
-5. Покажем, что $W^\nu$ совпадает с $\mathrm{Win}_N(\pi^\nu)$.
+5. Покажем, что $W^\nu$ совпадает с $\mathrm{Win}_N(\pi^\nu)$.  
    По п.4 определения победивших норм норма $r_i$ побеждает на трассе тогда и только тогда, когда она применима и не поражена ни одной применимой нормой более высокого приоритета (включая defeater’ы, если соответствующие пары включены в $D$), то есть:
-   $
-   \begin{equation}\nonumber
-   r_i \in \mathrm{Win}_N(\pi^\nu)
-   \iff
-   \Bigl(\pi^\nu \models \varphi_i\Bigr)\ \land
-   \forall (r_j\succ r_i)\in D:\ \neg\Bigl(\pi^\nu \models \varphi_j \land \psi_{j\succ i}\Bigr).
-   \end{equation}
-   $
+   $$
+      r_i \in \mathrm{Win}_N(\pi^\nu)
+      \iff
+      \Bigl(\pi^\nu \models \varphi_i\Bigr)\ \land
+      \forall (r_j\succ r_i)\in D:\ \neg\Bigl(\pi^\nu \models \varphi_j \land \psi_{j\succ i}\Bigr)
+   $$
    Из $\nu \models \Delta^{K}$, во-первых, из всех (1) следует:
-   $
-   \begin{equation}\nonumber
+   $$
    \nu(\lambda_i)=\text{истина} \ \Rightarrow
-   \forall (r_j\succ r_i)\in D:\ \neg\bigl(\nu \models \varphi_j^{K}\land \psi_{j\succ i}^{K}\bigr),
-   \end{equation}
-   $
-   а значит (по корректности кодирования LTLf) никакая применимая более приоритетная норма не поражает $r_i$ на $\pi^\nu$.
+   \forall (r_j\succ r_i)\in D:\ \neg\bigl(\nu \models \varphi_j^{K}\land \psi_{j\succ i}^{K}\bigr)
+   $$
+   а значит (по корректности кодирования LTLf) никакая применимая более приоритетная норма не поражает $r_i$ на $\pi^\nu$.  
    Во-вторых, из ограничений $\Gamma_i^{K}$ следует обратное:
    если $\nu \models \varphi_i^{K}$ и для всех $(r_j\succ r_i)\in D$ выполнено $\neg(\nu \models \varphi_j^{K}\land \psi_{j\succ i}^{K})$, то $\nu(\lambda_i)=\text{истина}$.
    Совмещая это с п.3 (применимостью победителей), получаем:
-   $
-   \begin{equation}\nonumber
-   W^\nu = \mathrm{Win}_N(\pi^\nu).
-   \end{equation}
-   $
+   $$
+      W^\nu = \mathrm{Win}_N(\pi^\nu).
+   $$
 
 6. Из п.4 и равенства $W^\nu = \mathrm{Win}_N(\pi^\nu)$ следует:
-   $
-   \pi^\nu \models \bigwedge_{r \in \mathrm{Win}_N(\pi^\nu)} \psi_r.
-   $
+   $$
+   \pi^\nu \models \bigwedge_{r \in \mathrm{Win}_N(\pi^\nu)} \psi_r
+   $$
    Следовательно, найденная трасса $\pi^\nu$ является нормативно корректной; система норм $N$ непротиворечива на горизонте $K$.
 
 **(2) Полнота**: из нормативной модели строим модель $F_N^{K}$.
@@ -574,55 +486,47 @@ $
 Определим оценку $\nu$:
 
 1. Для всех $p\in AP$, $t=0,\dots,K-1$:
-   $
+   $$
     \nu(p_t) =
     \begin{cases}
     \text{истина}, & p \in s_t;\\
     \text{ложь}, & p \notin s_t.
     \end{cases}
-   $
+   $$
 
    Тогда по корректности кодирования LTLf получаем:
-   $
-   \nu \models \chi^{K} \iff \pi \models \chi \quad \text{для любой формулы } \chi.
-   $
+   $$
+   \nu \models \chi^{K} \iff \pi \models \chi \quad \text{для любой формулы} \chi
+   $$
 
 2. Для меток:
-   $
+   $$
     \nu(\lambda_i) =
     \begin{cases}
     \text{истина}, & r_i \in \mathrm{Win}_N(\pi);\\
     \text{ложь}, & r_i \notin \mathrm{Win}_N(\pi).
     \end{cases}
-   $
+   $$
 
 Теперь проверим, что $\nu \models F_N^{K}$.
 
-- Так как $\mathrm{Win}_N(\pi)\subseteq \mathrm{App}_N(\pi)$, для любого $r_i \in \mathrm{Win}_N(\pi)$ имеем $\pi\models \varphi_i$, значит $\nu \models \varphi_i^{K}$. При этом $\nu(\lambda_i)=$ истина, так что
-  $
-  \nu \models (\lambda_i \rightarrow \varphi_i^{K})
-  $
+- Так как $\mathrm{Win}_N(\pi)\subseteq \mathrm{App}_N(\pi)$, для любого $r_i \in \mathrm{Win}_N(\pi)$ имеем $\pi\models \varphi_i$, значит $\nu \models \varphi_i^{K}$. При этом $\nu(\lambda_i)=\text{истина}$, так что
+  $\nu \models (\lambda_i \rightarrow \varphi_i^{K})$
   для всех $i$. Следовательно, $\nu \models B^{K}$.
 
-- Так как $\pi \models \bigwedge_{r\in \mathrm{Win}_N(\pi)} \psi_r$, для любого $r_i \in \mathrm{Win}_N(\pi)$ имеем $\pi\models \psi_i$, откуда $\nu \models \psi_i^{K}$. При $\nu(\lambda_i)=$ истина получаем
-  $
-  \nu \models (\lambda_i \rightarrow \psi_i^{K})
-  $
+- Так как $\pi \models \bigwedge_{r\in \mathrm{Win}_N(\pi)} \psi_r$, для любого $r_i \in \mathrm{Win}_N(\pi)$ имеем $\pi\models \psi_i$, откуда $\nu \models \psi_i^{K}$. При $\nu(\lambda_i)=\text{истина}$ получаем
+  $\nu \models (\lambda_i \rightarrow \psi_i^{K})$
   для всех $i$. Следовательно, $\nu \models C^{K}$.
 
 - Покажем $\nu \models \Delta^{K}$.  
   Во-первых, если $\nu(\lambda_i)=\text{истина}$, то $r_i\in \mathrm{Win}_N(\pi)$, а значит по п.4 определения **не существует** применимой нормы $r_j$ с $(r_j\succ r_i)\in D$ такой, что одновременно $\pi\models \varphi_j \land \psi_{j\succ i}$. Следовательно, для каждого $(r_j\succ r_i)\in D$ истинно
-  $
-  \neg\bigl(\lambda_i \land \varphi_j^{K} \land \psi_{j\succ i}^{K}\bigr)
-  $
+  $\neg\bigl(\lambda_i \land \varphi_j^{K} \land \psi_{j\succ i}^{K}\bigr)$
   то есть $\nu \models \bigwedge_{(r_j\succ r_i)\in D}\Delta_{j\succ i}^{K}$.  
   Во-вторых, если выполнено
-  $
-  \begin{equation}\nonumber
-  \pi\models \varphi_i \ \land\ \bigwedge_{(r_j\succ r_i)\in D}\neg(\varphi_j\land \psi_{j\succ i})
-  \end{equation}
-  $
-  то по определению $r_i \in \mathrm{Win}_N(\pi)$, а значит $\nu(\lambda_i)=\text{истина}$ и выполняется $\Gamma_i^{K}$. Следовательно, $\nu \models \bigwedge_{i=1}^{n}\Gamma_i^{K}$.
+  $$
+      \pi\models \varphi_i \ \land \Big( \bigwedge_{(r_j\succ r_i)\in D}\neg(\varphi_j\land \psi_{j\succ i}) \Big)
+  $$
+  то по определению $r_i \in \mathrm{Win}_N(\pi)$, а значит $\nu(\lambda_i)=\text{истина}$ и выполняется $\Gamma_i^{K}$. Следовательно, $\nu \models \bigwedge_{i=1}^{n}(\Gamma_i^{K})$.
 
 Таким образом, $\nu \models \Delta^{K} \land B^{K} \land C^{K} = F_N^{K}$, и формула $F_N^{K}$ разрешима.
 
