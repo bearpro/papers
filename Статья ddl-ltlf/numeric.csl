@@ -1,24 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
-  <!-- This style was edited with the Visual CSL Editor (http://editor.citationstyles.org/visualEditor/) -->
   <info>
-    <title>Springer - Basic (numeric, brackets, no "et al.", alphabetical)</title>
-    <id>http://www.zotero.org/styles/springer-basic-brackets-no-et-al-alphabetical</id>
-    <link href="http://www.zotero.org/styles/springer-basic-brackets-no-et-al-alphabetical" rel="self"/>
-    <link href="http://www.zotero.org/styles/springer-basic-brackets-no-et-al" rel="template"/>
+    <title>Springer - Basic (numeric, brackets, no "et al.")</title>
+    <id>http://www.zotero.org/styles/springer-basic-brackets-no-et-al</id>
+    <link href="http://www.zotero.org/styles/springer-basic-brackets-no-et-al" rel="self"/>
+    <link href="http://www.zotero.org/styles/springer-basic-author-date" rel="template"/>
     <link href="http://www.springer.com/cda/content/document/cda_downloaddocument/instruct-authors-e.pdf" rel="documentation"/>
+    <link href="http://www.springer.com/cda/content/document/cda_downloaddocument/manuscript-guidelines-1.0.pdf" rel="documentation"/>
+    <!-- This style corresponds to 'Springer Basic' in the pdf document 'Key Style Points' at this url -->
+    <link href="http://www.springer.com/cda/content/document/cda_downloaddocument/Key_Style_Points_1.0.pdf" rel="documentation"/>
     <author>
       <name>Charles Parnot</name>
       <email>charles.parnot@gmail.com</email>
       <uri>http://twitter.com/cparnot</uri>
     </author>
     <category citation-format="numeric"/>
-    <summary>Springer Numbered Style but in alphabetical order in contrast to the Springer Numbered Style where the order is according to the appearance of the citations.</summary>
+    <summary>Springer Numbered Style for the disciplines Medicine, Biomedicine, Life Sciences, Chemistry, Geosciences, Computer Science, Engineering, Economics. This style is based on Harvard style and recommendations of the Council of Biology Editors.</summary>
     <updated>2025-05-18T00:55:38+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <macro name="author">
     <names variable="author">
       <name sort-separator=" " initialize-with="" name-as-sort-order="all" delimiter=", " delimiter-precedes-last="always"/>
+      <!--<et-al strip-periods="true"/> -->
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>
@@ -37,11 +41,6 @@
         <text variable="edition"/>
       </else>
     </choose>
-  </macro>
-  <macro name="year">
-    <date variable="issued">
-      <date-part name="year"/>
-    </date>
   </macro>
   <macro name="title">
     <choose>
@@ -70,10 +69,6 @@
     </layout>
   </citation>
   <bibliography second-field-align="flush">
-    <sort>
-      <key macro="author"/>
-      <key macro="year"/>
-    </sort>
     <layout>
       <text variable="citation-number" suffix=". "/>
       <group delimiter=" ">
@@ -122,11 +117,11 @@
                 <group delimiter=" ">
                   <text variable="container-title" form="short" strip-periods="true"/>
                   <group delimiter=":">
-                    <text variable="volume"/>
+                    <text variable="volume" suffix=":"/>
                     <text variable="page"/>
                   </group>
                 </group>
-                <text prefix=". doi: " variable="DOI"/>
+                <text prefix=". https://doi.org/" variable="DOI"/>
               </group>
             </if>
             <else>
@@ -135,7 +130,7 @@
        J Mol Med. doi:10.1007/s001090000086     -->
               <group prefix=". " delimiter=". ">
                 <text variable="container-title" form="short" strip-periods="true"/>
-                <text prefix="doi: " variable="DOI"/>
+                <text prefix="https://doi.org/" variable="DOI"/>
               </group>
             </else>
           </choose>
