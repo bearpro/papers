@@ -1,0 +1,198 @@
+- id: gost-1-1-2002
+  type: standard
+  title: "ГОСТ 1.1–2002 «Межгосударственная система стандартизации. Термины и определения»"
+  section: "6.1"
+
+- id: iso-iec-ieee-29148-2018
+  type: standard
+  title: "Systems and software engineering — Life cycle processes — Requirements engineering"
+  issued:
+    year: 2018
+  publisher: "ISO/IEC/IEEE"
+  number: "29148:2018"
+
+- id: bruel-formalism-requirements
+  type: article
+  author:
+    - family: Bruel
+      given: Jean-Michel
+    - literal: et al.
+  title: "The role of formalism in system requirements"
+
+- id: reqif-1-0-1
+  type: report
+  title: "Requirements Interchange Format (ReqIF)"
+  version: "1.0.1"
+
+- id: spreeuwenberg-healy-sbvr-cnl
+  type: article
+  author:
+    - family: Spreeuwenberg
+    - family: Healy
+  title: "SBVR’s Approach to Controlled Natural Language"
+
+- id: sbvr-semantic-formulations-example
+  type: report
+  title: "Semantic Formulations in SBVR Example"
+
+- id: legalruleml-core-1-0
+  type: report
+  author:
+    - literal: OASIS
+  title: "LegalRuleML Core Specification"
+  version: "1.0"
+
+- id: de-giacomo-vardi-ltlf
+  type: article
+  author:
+    - family: De Giacomo
+    - family: Vardi
+  title: "Linear Temporal Logic and Linear Dynamic Logic on Finite Traces"
+
+- id: fionda-ltlf-complexity
+  type: article
+  author:
+    - family: Fionda
+    - literal: et al.
+  title: "The Complexity of LTL on Finite Traces: Hard and Easy Fragments"
+
+- id: lamport-tla
+  type: article
+  author:
+    - family: Lamport
+      given: Leslie
+  title: "The Temporal Logic of Actions"
+
+- id: nusmv-2-7-tutorial
+  type: report
+  title: "NuSMV 2.7 Tutorial"
+
+- id: holzmann-spin
+  type: book
+  author:
+    - family: Holzmann
+      given: Gerard J.
+  title: "The Model Checker SPIN"
+
+- id: sep-deontic-logic
+  type: entry-encyclopedia
+  author:
+    - literal: "Stanford Encyclopedia of Philosophy"
+  title: "Deontic Logic"
+
+- id: nute-defeasible-logic
+  type: article
+  author:
+    - family: Nute
+      given: Donald
+  title: "Defeasible Logic"
+
+- id: governatori-pragmatic-oddity
+  type: article
+  author:
+    - family: Governatori
+    - family: Colombo Tosatto
+    - family: Rotolo
+  title: "A Defeasible Deontic Logic for Pragmatic Oddity"
+
+- id: padget-instal
+  type: article
+  author:
+    - family: Padget
+    - literal: et al.
+  title: "InstAL: An Institutional Action Language"
+
+- id: van-binsbergen-eflint
+  type: article
+  author:
+    - family: van Binsbergen
+    - literal: et al.
+  title: "eFLINT: a Domain-Specific Language for Executable Norm Specifications"
+
+- id: dardenne-van-lamsweerde-fickas-1993
+  type: article-journal
+  author:
+    - family: Dardenne
+      given: A.
+    - family: van Lamsweerde
+      given: A.
+    - family: Fickas
+      given: S.
+  title: "Goal-Directed Requirements Acquisition"
+  container-title: "Science of Computer Programming"
+  volume: "20"
+  issue: "1-2"
+  issued:
+    year: 1993
+    month: 4
+
+- id: van-lamsweerde-craft-to-discipline
+  type: article
+  author:
+    - family: van Lamsweerde
+  title: "From Craft to Discipline: The Key Challenges of Requirements Engineering"
+
+- id: itu-t-z-151
+  type: standard
+  title: "ITU-T Recommendation Z.151"
+  note: "URN"
+
+- id: akoma-ntoso-1-0
+  type: report
+  author:
+    - literal: OASIS
+  title: "Akoma Ntoso"
+  version: "1.0"
+
+- id: machine-readable-law-concept
+  type: report
+  title: "Концепция развития технологий машиночитаемого права"
+
+- id: sep-chisholm-paradox
+  type: entry-encyclopedia
+  author:
+    - literal: "Stanford Encyclopedia of Philosophy"
+  title: "Deontic Logic > A Bit More on Chisholm’s Paradox"
+
+- id: biere-cimatti-clarke-zhu
+  type: article
+  author:
+    - family: Biere
+    - family: Cimatti
+    - family: Clarke
+    - family: Zhu
+  title: "Symbolic Model Checking without BDDs"
+
+- id: barrett-smt-tutorial
+  type: article
+  author:
+    - family: Barrett
+    - literal: et al.
+  title: "Satisfiability Modulo Theories: A Beginner’s Tutorial"
+
+- id: smt-lib-2-7
+  type: standard
+  title: "SMT-LIB Standard"
+  version: "2.7"
+
+- id: bounded-model-checking
+  type: article
+  title: "Bounded Model Checking"
+
+- id: kaos-tutorial
+  type: report
+  title: "KAOS Tutorial"
+
+- id: boella-normative-mas
+  type: article
+  author:
+    - family: Boella
+    - literal: et al.
+  title: "Introduction to Normative Multiagent Systems"
+
+- id: hannoun-moise
+  type: article
+  author:
+    - family: Hannoun
+    - literal: et al.
+  title: "An Organization Model for Multi-Agent Systems — MOISE"
