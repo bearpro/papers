@@ -12,28 +12,38 @@
   number: "29148:2018"
 
 - id: bruel-formalism-requirements
-  type: article
+  type: article-journal
   author:
     - family: Bruel
       given: Jean-Michel
-    - literal: et al.
+    - family: Ebersold
+      given: Sophie
+    - family: Galinier
+      given: Florian
+    - family: Mazzara
+      given: Manuel
+    - family: Naumchev
+      given: Alexandr
+    - family: Meye
+      given: Bertrand
   title: "The role of formalism in system requirements"
 
 - id: reqif-1-0-1
-  type: report
+  type: standard
   title: "Requirements Interchange Format (ReqIF)"
   version: "1.0.1"
 
 - id: spreeuwenberg-healy-sbvr-cnl
-  type: article
+  type: article-journal
   author:
     - family: Spreeuwenberg
     - family: Healy
   title: "SBVR's Approach to Controlled Natural Language"
 
 - id: sbvr-semantic-formulations-example
-  type: report
+  type: article-journal
   title: Semantic Formulations in SBVR Example
+  container-title: Rule Languages for Interoperability
   author: 
   - family: Baisley
     given: Don 
@@ -41,24 +51,26 @@
     given: John 
   - family: Chapin
     given: Donald 
-  url: https://www.w3.org/2004/12/rules-ws/paper/67/
+  url: https://api.semanticscholar.org/CorpusID:29960447
+  issued: 
+    year: 2005
 
 - id: legalruleml-core-1-0
-  type: report
+  type: standard
   author:
     - literal: OASIS
   title: LegalRuleML Core Specification
   version: "1.0"
 
 - id: de-giacomo-vardi-ltlf
-  type: article
+  type: article-journal
   author:
     - family: De Giacomo
     - family: Vardi
   title: Linear Temporal Logic and Linear Dynamic Logic on Finite Traces
 
 - id: fionda-ltlf-complexity
-  type: article
+  type: article-journal
   author:
     - family: Fionda
       given: Valeria
@@ -67,14 +79,14 @@
   title: "The Complexity of LTL on Finite Traces: Hard and Easy Fragments"
 
 - id: lamport-tla
-  type: article
+  type: article-journal
   author:
     - family: Lamport
       given: Leslie
   title: "The Temporal Logic of Actions"
 
 - id: nusmv-2-7-tutorial
-  type: report
+  type: webpage
   author: 
   - family: Roberto 
     given: Cavada
@@ -105,14 +117,14 @@
   title: "Deontic Logic"
 
 - id: nute-defeasible-logic
-  type: article
+  type: article-journal
   author:
     - family: Nute
       given: Donald
   title: "Defeasible Logic"
 
 - id: governatori-pragmatic-oddity
-  type: article
+  type: article-journal
   author:
     - family: Governatori
     - family: Colombo Tosatto
@@ -120,28 +132,38 @@
   title: "A Defeasible Deontic Logic for Pragmatic Oddity"
 
 - id: padget-instal
-  type: article
+  type: article-journal
   author:
     - family: Padget
-    - literal: et al.
+    - family: Elakehal
+      given: Emad
+    - family: Li
+      given: Tingting
+    - family: De Vos
+      given: Marina
   title: "InstAL: An Institutional Action Language"
 
 - id: van-binsbergen-eflint
-  type: article
+  type: article-journal
   author:
     - family: van Binsbergen
-    - literal: et al.
+    - family: Liu
+      given: Lu-Chi
+    - family: van Doesburg
+      given: Robert 
+    - family: van Engers
+      given: Tom 
   title: "eFLINT: a Domain-Specific Language for Executable Norm Specifications"
 
 - id: dardenne-van-lamsweerde-fickas-1993
   type: article-journal
   author:
     - family: Dardenne
-      given: A.
+      given: Anne
     - family: van Lamsweerde
-      given: A.
+      given: Axel
     - family: Fickas
-      given: S.
+      given: Stephen
   title: "Goal-Directed Requirements Acquisition"
   container-title: "Science of Computer Programming"
   volume: "20"
@@ -151,7 +173,7 @@
     month: 4
 
 - id: van-lamsweerde-craft-to-discipline
-  type: article
+  type: article-journal
   author:
     - family: van Lamsweerde
   title: "From Craft to Discipline: The Key Challenges of Requirements Engineering"
@@ -164,8 +186,9 @@
   version: "1.0"
 
 - id: machine-readable-law-concept
-  type: report
+  type: webpage
   title: "Концепция развития технологий машиночитаемого права"
+  url: https://www.economy.gov.ru/material/file/792d50ea6a6f3a9c75f95494c253ab99/31_15092021.pdf
 
 - id: sep-chisholm-paradox
   type: entry-encyclopedia
@@ -174,7 +197,7 @@
   title: "Deontic Logic > A Bit More on Chisholm’s Paradox"
 
 - id: biere-cimatti-clarke-zhu
-  type: article
+  type: article-journal
   author:
     - family: Biere
       given: Armin 
@@ -188,11 +211,27 @@
   url: https://fmv.jku.at/papers/BiereCimattiClarkeZhu-TACAS99.pdf
 
 - id: barrett-smt-tutorial
-  type: article
+  type: paper-conference
   author:
     - family: Barrett
-    - literal: et al.
+      given: Clark
+    - family: Tinelli
+      given: Cesare 
+    - family: Barbosa
+      given: Haniel 
+    - family: Niemetz
+      given: Aina 
+    - family: Preiner
+      given: Mathias 
+    - family: Reynolds
+      given: Andrew 
+    - family: Zohar 
+      given: Yoni 
   title: "Satisfiability Modulo Theories: A Beginner’s Tutorial"
+  container-title: Formal Methods
+  issued: 
+    year: 2024
+    month: 9
 
 - id: smt-lib-2-7
   type: standard
@@ -201,7 +240,7 @@
   url: https://smt-lib.org/papers/smt-lib-reference-v2.7-r2025-02-05.pdf
 
 - id: bounded-model-checking
-  type: article
+  type: article-journal
   author:
     - family: Biere
       given: Armin 
@@ -220,7 +259,7 @@
     year: 2003
 
 - id: kaos-tutorial
-  type: report
+  type: webpage
   title: "KAOS Tutorial"
   issued:
     year: 2007
@@ -228,7 +267,7 @@
   url: https://www.objectiver.com/fileadmin/download/documents/KaosTutorial.pdf
 
 - id: boella-normative-mas
-  type: article
+  type: article-journal
   author:
     - family: Boella
       given: Guido
@@ -264,7 +303,7 @@
     year: 2024
 
 - id: golovin-standards-digitalization
-  type: article
+  type: article-journal
   title: Цифровая трансформация стандартизации требует системного подхода и практических действий
   container-title: ИТ-Стандарт
   author:
@@ -278,10 +317,12 @@
 
 - id: prokazin-contradictions-review
   title: Применение методов ИИ для определения противоречий и ограничений в ссылочных стандартах и других законодательных и нормативных документах - Обзор актуальных задач
-  type: report
+  container-title: Конференция ИТ-Стандарт
+  type: paper-conference
   author: 
   - family: Проказин
     given: М. Р.
+  issued: 2023
 
 - id: yu-istar
   title: "Enterprise modelling for business redesign: the i* framework"
@@ -300,7 +341,7 @@
   url: https://dl.acm.org/doi/pdf/10.1145/271159.271180
 
 - id: kadakolmath-istar-z
-  type: article
+  type: article-journal
   title: iStar Goal Model to Z Formal Model Translation and Model Checking of CBTC Moving Block Interlocking System
   author: 
   - family: Kadakolmath
@@ -309,7 +350,7 @@
     given: Umesh D.
 
 - id: boley-ruleml
-  type: article
+  type: article-journal
   title: "Design Rationale of RuleML: A Markup Language for Semantic Web Rules"
   author:
   - family: Boley
@@ -321,7 +362,7 @@
 
 - id: cliffe-instal
   title: Specifying and reasoning about multiple institutions
-  type: article
+  type: article-journal
   author: 
   - family: Cliffe 
     given: Owen 
@@ -331,6 +372,7 @@
     given: Julian 
 
 - id: moise-npm
+  type: webpage
   title: Исходный код MOISE+ NPM
   url: https://github.com/moise-lang/npl
 
@@ -346,7 +388,7 @@
 
 - id: karavaev-deontic-issues
   title: Еще раз о трудностях построения деонтической логики
-  type: article
+  type: article-journal
   author:
   - family: Караваев
     given: Э. Ф.
