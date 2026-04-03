@@ -29,17 +29,25 @@
   author:
     - family: Spreeuwenberg
     - family: Healy
-  title: "SBVR’s Approach to Controlled Natural Language"
+  title: "SBVR's Approach to Controlled Natural Language"
 
 - id: sbvr-semantic-formulations-example
   type: report
-  title: "Semantic Formulations in SBVR Example"
+  title: Semantic Formulations in SBVR Example
+  author: 
+  - family: Baisley
+    given: Don 
+  - family: Hall
+    given: John 
+  - family: Chapin
+    given: Donald 
+  url: https://www.w3.org/2004/12/rules-ws/paper/67/
 
 - id: legalruleml-core-1-0
   type: report
   author:
     - literal: OASIS
-  title: "LegalRuleML Core Specification"
+  title: LegalRuleML Core Specification
   version: "1.0"
 
 - id: de-giacomo-vardi-ltlf
@@ -47,13 +55,15 @@
   author:
     - family: De Giacomo
     - family: Vardi
-  title: "Linear Temporal Logic and Linear Dynamic Logic on Finite Traces"
+  title: Linear Temporal Logic and Linear Dynamic Logic on Finite Traces
 
 - id: fionda-ltlf-complexity
   type: article
   author:
     - family: Fionda
-    - literal: et al.
+      given: Valeria
+    - family: Greco 
+      given: Gianluigi
   title: "The Complexity of LTL on Finite Traces: Hard and Easy Fragments"
 
 - id: lamport-tla
@@ -65,7 +75,21 @@
 
 - id: nusmv-2-7-tutorial
   type: report
-  title: "NuSMV 2.7 Tutorial"
+  author: 
+  - family: Roberto 
+    given: Cavada
+  - family: Alessandro 
+    given: Cimatti
+  - family: Gavin 
+    given: Keighren
+  - family: Emanuele 
+    given: Olivetti,
+  - family: Marco 
+    given: Pistore
+  - family: Marco 
+    given: Roveri
+  title: NuSMV 2.7 Tutorial
+  url: https://nusmv.fbk.eu/tutorial/v27/tutorial.pdf
 
 - id: holzmann-spin
   type: book
@@ -132,11 +156,6 @@
     - family: van Lamsweerde
   title: "From Craft to Discipline: The Key Challenges of Requirements Engineering"
 
-- id: itu-t-z-151
-  type: standard
-  title: "ITU-T Recommendation Z.151"
-  note: "URN"
-
 - id: akoma-ntoso-1-0
   type: report
   author:
@@ -158,10 +177,15 @@
   type: article
   author:
     - family: Biere
+      given: Armin 
     - family: Cimatti
+      given: Alessandro 
     - family: Clarke
+      given: Edmund 
     - family: Zhu
+      given: Yunshan 
   title: "Symbolic Model Checking without BDDs"
+  url: https://fmv.jku.at/papers/BiereCimattiClarkeZhu-TACAS99.pdf
 
 - id: barrett-smt-tutorial
   type: article
@@ -174,25 +198,158 @@
   type: standard
   title: "SMT-LIB Standard"
   version: "2.7"
+  url: https://smt-lib.org/papers/smt-lib-reference-v2.7-r2025-02-05.pdf
 
 - id: bounded-model-checking
   type: article
+  author:
+    - family: Biere
+      given: Armin 
+    - family: Cimatti
+      given: Alessandro 
+    - family: Clarke
+      given: Edmund 
+    - family: Strichman
+      given: Ofer 
+    - family: Zhu
+      given: Yunshan 
   title: "Bounded Model Checking"
+  container-title: Advances in Computers.
+  volume: "58"
+  issued:
+    year: 2003
 
 - id: kaos-tutorial
   type: report
   title: "KAOS Tutorial"
+  issued:
+    year: 2007
+    month: 10
+  url: https://www.objectiver.com/fileadmin/download/documents/KaosTutorial.pdf
 
 - id: boella-normative-mas
   type: article
   author:
     - family: Boella
-    - literal: et al.
-  title: "Introduction to Normative Multiagent Systems"
+      given: Guido
+    - family: van der Torre 
+      given: Leendert
+    - family: Verhagen
+      given: Harko
+  title: Introduction to Normative Multiagent Systems
+  container-title: Computational & Mathematical Organization Theory
+  url: https://link.springer.com/article/10.1007/s10588-006-9537-7#citeas
 
 - id: hannoun-moise
-  type: article
+  type: paper-conference
   author:
     - family: Hannoun
-    - literal: et al.
+      given: Mahdi
+    - family: Boissier
+      given: Olivier
+    - family: Sichman
+      given: Jaime S.
+    - family: Sayettat
+      given: Claudette
   title: "An Organization Model for Multi-Agent Systems — MOISE"
+  container-title: Advances in Artificial Intelligence
+  url: https://link.springer.com/chapter/10.1007/3-540-44399-1_17
+  issued:
+    year: 2000
+
+- id: pnst-smart-standards-general
+  type: standard
+  title: ПНСТ 864-2023 «Умные (SMART) стандарты. Общие положения»
+  issued:
+    year: 2024
+
+- id: golovin-standards-digitalization
+  type: article
+  title: Цифровая трансформация стандартизации требует системного подхода и практических действий
+  container-title: ИТ-Стандарт
+  author:
+  - family: Головин
+    given: С. А.
+  - family: Лоцманов
+    given: А. Н.
+  - family: Тихомиров 
+    given: С. Г.
+  issued: 2023
+
+- id: prokazin-contradictions-review
+  title: Применение методов ИИ для определения противоречий и ограничений в ссылочных стандартах и других законодательных и нормативных документах - Обзор актуальных задач
+  type: report
+  author: 
+  - family: Проказин
+    given: М. Р.
+
+- id: yu-istar
+  title: "Enterprise modelling for business redesign: the i* framework"
+  container-title: ACM SIGGROUP Bulletin
+  type: article-journal
+  author:
+  - family: Yu
+    given: Erick S. K.
+  - family: Mylopoulos
+    given: John
+  volume: 18
+  issue: 1
+  page: 59-63
+  publisher: ACM
+  language: en
+  url: https://dl.acm.org/doi/pdf/10.1145/271159.271180
+
+- id: kadakolmath-istar-z
+  type: article
+  title: iStar Goal Model to Z Formal Model Translation and Model Checking of CBTC Moving Block Interlocking System
+  author: 
+  - family: Kadakolmath
+    given: Lokanna
+  - family: Ramu
+    given: Umesh D.
+
+- id: boley-ruleml
+  type: article
+  title: "Design Rationale of RuleML: A Markup Language for Semantic Web Rules"
+  author:
+  - family: Boley
+    given: Harold
+  - family: Tabet
+    given: Said
+  - family: Wagner
+    given: Gerd
+
+- id: cliffe-instal
+  title: Specifying and reasoning about multiple institutions
+  type: article
+  author: 
+  - family: Cliffe 
+    given: Owen 
+  - family: De Vos 
+    given: Marina 
+  - family: Padget 
+    given: Julian 
+
+- id: moise-npm
+  title: Исходный код MOISE+ NPM
+  url: https://github.com/moise-lang/npl
+
+- id: kamkin-formal-verification
+  title: Введение в формальные методы верификации программ
+  author:
+  - family: Камкин 
+    given: А. С.
+  type: book
+  issue:
+    year: 2018
+  url: http://sp.cs.msu.ru/courses/vmp/kamkin_mc2018.pdf
+
+- id: karavaev-deontic-issues
+  title: Еще раз о трудностях построения деонтической логики
+  type: article
+  author:
+  - family: Караваев
+    given: Э. Ф.
+  issue:
+    year: 2005
+  url: https://cyberleninka.ru/article/n/esche-raz-o-trudnostyah-postroeniya-deonticheskoy-logiki
