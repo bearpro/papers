@@ -1,0 +1,7 @@
+- id: prokazin-ddl-ltlf
+  type: article-journal
+  author:
+    - family: Проказин
+      given: Михаил Русланович
+  title: "Гибридный формализм описания нормативных требований DDL-LTLf"
+
