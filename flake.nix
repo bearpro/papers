@@ -18,6 +18,8 @@
         default = pkgs.mkShell {
           packages = with pkgs; [
             pandoc
+            plantuml
+            pandoc-plantuml-filter
           ];
         };
       });
