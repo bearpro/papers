@@ -176,7 +176,7 @@ InternalUser --> UC12
 - Поддержка ограничений, иерархий и соответствий между типами
 - Явное различение ролей: субъект, объект, действие, событие, состояние
 
-# Требования к инструентальной реализации
+## Требования к инструентальной реализации
 
 - Читаемость человеком
 - LLM-дружелюбность
@@ -187,6 +187,62 @@ InternalUser --> UC12
 - Удобство трансляции из других языков и форматов
 
 # Реализация требований в языке
+
+## Реализация семантических требований
+
+- Формальная и однозначная семантика
+  Данное требование реализуется за счёт строго набора атомов с определённой семантикой, из которых строится спецификация:
+  - Entity - описание сущности например:
+
+    ```python
+    class TrafficLight:
+        color: Color
+    ```
+
+  - Predicate - описание условия
+
+    ```python
+    @predicate
+    def red(trafficLight: TrafficLight):
+        trafficLight.color == Color.Red
+    
+    @predicate
+    def yellow(trafficLight: TrafficLight):
+        trafficLight.color == Color.Yellow
+    
+    @predicate
+    def green(trafficLight: TrafficLight):
+        trafficLight.color == Color.Green
+    ```
+
+    Пропозиционные предикаты могут существовать в временной цепочке:
+
+    ```python
+    @predicate
+    def blink(trafficLight: TrafficLight, t: Trace):
+        t.Until(trafficLight.Color != None, trafficLight.Color == None)
+    
+    @predicate
+    def duration(entity, predicate, t: Trace, time: int):
+        while time -= 1 > 0:
+            t.Next(predicate(entity, t))
+    
+    @predicate 
+    def blink_yellow_before_red(trafficLight: TrafficLight, t: Trace):
+        yellow(trafficLight) and duration(trafficLight, blink, t, 5) and t.Next(red(trafficLight))
+    ```
+
+  - Statement - описание приложения условия
+
+    ```python
+    @rule("Light yellow before red")
+    obligated(blink_yellow_before_red)
+    ```
+
+## Реализация инструментальных требований
+
+- Дружелюбность к LLM обеспечивается Python-like синтаксисом
+  Формальный язык является подмножеством Python, а рантайм реализован как обычная python библиотека. Планируется вторая версия, которая не будет зависима от Python, а рантайм реализован на чистом Z3
 
 # Ограничения подхода
 
