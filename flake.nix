@@ -20,6 +20,7 @@
             pandoc
             plantuml
             pandoc-plantuml-filter
+            texlive.combined.scheme-medium
           ];
         };
       });

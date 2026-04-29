@@ -14,3 +14,12 @@ mdl-design:
 		--filter pandoc-plantuml \
 		--reference-doc='./reference/it-standard-uncrappified.docx' \
 		-o './out/Проказин, Дизайн MDL.docx'
+
+nlp-linter:
+	pandoc './Статья nlp linter/paper-pro-max-v2.md' \
+		--katex \
+		--resource-path='./Статья nlp linter/' \
+		--citeproc \
+		--reference-doc='./reference/it-standard-uncrappified.docx' \
+		-o './out/Проказин, NLP Linter.docx'
+	

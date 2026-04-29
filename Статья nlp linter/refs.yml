@@ -1,0 +1,129 @@
+- id: prokazin-ddl-ltlf
+  type: article-journal
+  author:
+    - family: Проказин
+      given: Михаил Русланович
+  title: "Гибридный формализм описания нормативных требований DDL-LTLf"
+  container-title: "ИТ-Стандарт"
+  issued:
+    year: 2026
+  note: "Выходные данные подлежат уточнению."
+
+- id: teremov-prokazin-rusreqif
+  title: Предложения к стандарту, описывающему архитектуру и формат данных умных стандартов
+  author:
+  - family: Проказин
+    given: Михаил Русланович
+  - family: Теремов
+    given: Иван Алексеевич
+  container-title: "ИТ-Стандарт"
+  issued:
+    year: 2025
+
+- id: omg-reqif-1-2
+  type: standard
+  author:
+    - literal: "Object Management Group"
+  title: "Requirements Interchange Format (ReqIF)"
+  version: "1.2"
+  issued:
+    year: 2016
+    month: 7
+  url: "https://www.omg.org/spec/ReqIF/1.2/"
+
+- id: koutras-valentine-2021
+  type: paper-conference
+  author:
+    - family: Koutras
+      given: Christos
+    - family: Siachamis
+      given: George
+    - family: Ionescu
+      given: Adriana
+    - family: Psarakis
+      given: Konstantinos
+    - family: Brons
+      given: Jeroen
+    - family: Fragkoulis
+      given: Marios
+    - family: Lofi
+      given: Christoph
+    - family: Bonifati
+      given: Angela
+    - family: Katsifodimos
+      given: Asterios
+  title: "Valentine: Evaluating Matching Techniques for Dataset Discovery"
+  container-title: "2021 IEEE 37th International Conference on Data Engineering (ICDE)"
+  page: "468-479"
+  publisher: "IEEE"
+  issued:
+    year: 2021
+  doi: "10.1109/ICDE51399.2021.00047"
+  url: "https://doi.org/10.1109/ICDE51399.2021.00047"
+
+- id: lopez-bdikit-demo-2026
+  type: paper-conference
+  author:
+    - family: Lopez
+      given: Raphael
+    - family: Liu
+      given: Yuliang
+    - family: Koutras
+      given: Christos
+    - family: Freire
+      given: Juliana
+  title: "BDI-Kit Demo: A Toolkit for Programmable and Conversational Data Harmonization"
+  container-title: "Companion of the International Conference on Management of Data"
+  publisher: "ACM"
+  issued:
+    year: 2026
+  doi: "10.1145/3788853.3801608"
+  url: "https://doi.org/10.1145/3788853.3801608"
+
+- id: liu-magneto-2025
+  type: article-journal
+  author:
+    - family: Liu
+      given: Yuliang
+    - family: Pena
+      given: Esteban
+    - family: Santos
+      given: Aécio
+    - family: Wu
+      given: Eugene
+    - family: Freire
+      given: Juliana
+  title: "Magneto: Combining Small and Large Language Models for Schema Matching"
+  container-title: "Proceedings of the VLDB Endowment"
+  volume: "18"
+  issue: "8"
+  page: "2681-2694"
+  issued:
+    year: 2025
+  doi: "10.14778/3742728.3742757"
+  url: "https://doi.org/10.14778/3742728.3742757"
+
+- id: microsoft-lsp-3-17
+  type: webpage
+  author:
+    - literal: "Microsoft"
+  title: "Language Server Protocol Specification"
+  version: "3.17"
+  url: "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
+  accessed:
+    year: 2026
+    month: 4
+    day: 29
+
+- id: nute-defeasible-deontic-logic
+  type: book
+  editor:
+    - family: Nute
+      given: Donald
+  title: "Defeasible Deontic Logic"
+  collection-title: "Synthese Library"
+  volume: "263"
+  publisher: "Kluwer Academic Publishers"
+  publisher-place: "Dordrecht"
+  issued:
+    year: 1997
