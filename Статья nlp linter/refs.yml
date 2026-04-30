@@ -1,24 +1,26 @@
 - id: prokazin-ddl-ltlf
-  type: article-journal
+  type: paper-conference
   author:
     - family: Проказин
       given: Михаил Русланович
   title: "Гибридный формализм описания нормативных требований DDL-LTLf"
-  container-title: "ИТ-Стандарт"
+  container-title: "ИТ-Стандарт 2025: презентации и видео докладов"
   issued:
-    year: 2026
-  note: "Выходные данные подлежат уточнению."
+    year: 2025
+  url: "https://www.cksit-rspp.ru/conferences/video-dokladov-it-standart-2025/"
 
 - id: teremov-prokazin-rusreqif
-  title: Предложения к стандарту, описывающему архитектуру и формат данных умных стандартов
+  type: article-journal
+  title: "Предложения к стандарту, описывающему архитектуру и формат данных умных стандартов"
   author:
-  - family: Проказин
-    given: Михаил Русланович
-  - family: Теремов
-    given: Иван Алексеевич
+    - family: Проказин
+      given: Михаил Русланович
+    - family: Теремов
+      given: Иван Алексеевич
   container-title: "ИТ-Стандарт"
   issued:
     year: 2025
+  url: "https://itstd-journal.ru/wp-content/uploads/2025/02/PROPOSALS-FOR-A-STANDARD-DESCRIBING-THE-ARCHITECTURE.pdf"
 
 - id: omg-reqif-1-2
   type: standard
@@ -29,7 +31,126 @@
   issued:
     year: 2016
     month: 7
-  url: "www.omg.org/spec/ReqIF/1.2/"
+  url: "https://www.omg.org/spec/ReqIF/1.2/"
+
+- id: rahm-bernstein-schema-matching-2001
+  type: article-journal
+  author:
+    - family: Rahm
+      given: Erhard
+    - family: Bernstein
+      given: Philip A.
+  title: "A Survey of Approaches to Automatic Schema Matching"
+  container-title: "The VLDB Journal"
+  volume: "10"
+  issue: "4"
+  page: "334-350"
+  issued:
+    year: 2001
+  doi: "10.1007/s007780100057"
+  url: "https://doi.org/10.1007/s007780100057"
+
+- id: shvaiko-euzenat-ontology-matching-2013
+  type: article-journal
+  author:
+    - family: Shvaiko
+      given: Pavel
+    - family: Euzenat
+      given: Jérôme
+  title: "Ontology Matching: State of the Art and Future Challenges"
+  container-title: "IEEE Transactions on Knowledge and Data Engineering"
+  volume: "25"
+  issue: "1"
+  page: "158-176"
+  issued:
+    year: 2013
+  doi: "10.1109/TKDE.2011.253"
+  url: "https://doi.org/10.1109/TKDE.2011.253"
+
+- id: nute-defeasible-deontic-logic
+  type: book
+  editor:
+    - family: Nute
+      given: Donald
+  title: "Defeasible Deontic Logic"
+  collection-title: "Synthese Library"
+  volume: "263"
+  publisher: "Kluwer Academic Publishers"
+  publisher-place: "Dordrecht"
+  issued:
+    year: 1997
+  isbn: "0-7923-4630-0"
+  url: "https://unesdoc.unesco.org/ark:/48223/pf0000109572"
+
+- id: microsoft-lsp-3-17
+  type: webpage
+  author:
+    - literal: "Microsoft"
+  title: "Language Server Protocol Specification"
+  version: "3.17"
+  url: "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
+  accessed:
+    year: 2026
+    month: 4
+    day: 30
+
+- id: ecma-csharp-334-2023
+  type: standard
+  author:
+    - literal: "Ecma International"
+  title: "ECMA-334: C# Language Specification"
+  version: "7th edition"
+  issued:
+    year: 2023
+    month: 12
+  url: "https://ecma-international.org/publications-and-standards/standards/ecma-334/"
+  accessed:
+    year: 2026
+    month: 4
+    day: 30
+
+- id: madaan-self-refine-2023
+  type: report
+  author:
+    - family: Madaan
+      given: Aman
+    - family: Tandon
+      given: Niket
+    - family: Gupta
+      given: Prakhar
+    - family: Hallinan
+      given: Skyler
+    - family: Gao
+      given: Luyu
+    - family: Wiegreffe
+      given: Sarah
+    - family: Alon
+      given: Uri
+    - family: Dziri
+      given: Nouha
+    - family: Prabhumoye
+      given: Shrimai
+    - family: Yang
+      given: Yiming
+    - family: Gupta
+      given: Shashank
+    - family: Majumder
+      given: Bodhisattwa Prasad
+    - family: Hermann
+      given: Katherine
+    - family: Welleck
+      given: Sean
+    - family: Yazdanbakhsh
+      given: Amir
+    - family: Clark
+      given: Peter
+  title: "Self-Refine: Iterative Refinement with Self-Feedback"
+  publisher: "arXiv"
+  number: "arXiv:2303.17651"
+  issued:
+    year: 2023
+  doi: "10.48550/arXiv.2303.17651"
+  url: "https://arxiv.org/abs/2303.17651"
 
 - id: koutras-valentine-2021
   type: paper-conference
@@ -39,11 +160,11 @@
     - family: Siachamis
       given: George
     - family: Ionescu
-      given: Adriana
+      given: Andra
     - family: Psarakis
-      given: Konstantinos
+      given: Kyriakos
     - family: Brons
-      given: Jeroen
+      given: Jerry
     - family: Fragkoulis
       given: Marios
     - family: Lofi
@@ -59,38 +180,38 @@
   issued:
     year: 2021
   doi: "10.1109/ICDE51399.2021.00047"
-  url: "doi.org/10.1109/ICDE51399.2021.00047"
+  url: "https://doi.org/10.1109/ICDE51399.2021.00047"
 
 - id: lopez-bdikit-demo-2026
   type: paper-conference
   author:
     - family: Lopez
-      given: Raphael
+      given: Roque
     - family: Liu
-      given: Yuliang
+      given: Yurong
     - family: Koutras
       given: Christos
     - family: Freire
       given: Juliana
   title: "BDI-Kit Demo: A Toolkit for Programmable and Conversational Data Harmonization"
-  container-title: "Companion of the International Conference on Management of Data"
+  container-title: "Companion of the International Conference on Management of Data (SIGMOD Companion '26)"
   publisher: "ACM"
   issued:
     year: 2026
   doi: "10.1145/3788853.3801608"
-  url: "doi.org/10.1145/3788853.3801608"
+  url: "https://doi.org/10.1145/3788853.3801608"
 
 - id: liu-magneto-2025
   type: article-journal
   author:
     - family: Liu
-      given: Yuliang
+      given: Yurong
     - family: Pena
-      given: Esteban
+      given: Eduardo H. M.
     - family: Santos
       given: Aécio
     - family: Wu
-      given: Eugene
+      given: Eden
     - family: Freire
       given: Juliana
   title: "Magneto: Combining Small and Large Language Models for Schema Matching"
@@ -101,34 +222,70 @@
   issued:
     year: 2025
   doi: "10.14778/3742728.3742757"
-  url: "doi.org/10.14778/3742728.3742757"
+  url: "https://doi.org/10.14778/3742728.3742757"
 
-- id: microsoft-lsp-3-17
-  type: webpage
+- id: melnik-similarity-flooding-2002
+  type: paper-conference
   author:
-    - literal: "Microsoft"
-  title: "Language Server Protocol Specification"
-  version: "3.17"
-  url: "microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
-  accessed:
-    year: 2026
-    month: 4
-    day: 29
-
-- id: nute-defeasible-deontic-logic
-  type: book
-  editor:
-    - family: Nute
-      given: Donald
-  title: "Defeasible Deontic Logic"
-  collection-title: "Synthese Library"
-  volume: "263"
-  publisher: "Kluwer Academic Publishers"
-  publisher-place: "Dordrecht"
+    - family: Melnik
+      given: Sergey
+    - family: Garcia-Molina
+      given: Hector
+    - family: Rahm
+      given: Erhard
+  title: "Similarity Flooding: A Versatile Graph Matching Algorithm and Its Application to Schema Matching"
+  container-title: "Proceedings 18th International Conference on Data Engineering"
+  page: "117-128"
+  publisher: "IEEE"
   issued:
-    year: 1997
+    year: 2002
+  doi: "10.1109/ICDE.2002.994702"
+  url: "https://doi.org/10.1109/ICDE.2002.994702"
+
+- id: madhavan-cupid-2001
+  type: paper-conference
+  author:
+    - family: Madhavan
+      given: Jayant
+    - family: Bernstein
+      given: Philip A.
+    - family: Rahm
+      given: Erhard
+  title: "Generic Schema Matching with Cupid"
+  container-title: "Proceedings of the 27th International Conference on Very Large Data Bases"
+  page: "49-58"
+  publisher: "VLDB Endowment"
+  issued:
+    year: 2001
+  url: "https://www.vldb.org/conf/2001/P049.pdf"
+
+- id: aumueller-coma-2005
+  type: paper-conference
+  author:
+    - family: Aumueller
+      given: David
+    - family: Do
+      given: Hong-Hai
+    - family: Massmann
+      given: Sabine
+    - family: Rahm
+      given: Erhard
+  title: "Schema and Ontology Matching with COMA++"
+  container-title: "Proceedings of the 2005 ACM SIGMOD International Conference on Management of Data"
+  page: "906-908"
+  publisher: "ACM"
+  issued:
+    year: 2005
+  doi: "10.1145/1066157.1066283"
+  url: "https://doi.org/10.1145/1066157.1066283"
 
 - id: github
   type: webpage
-  author: Проказин М.Р.
-  url: github.com/bearpro/semantic-feedback-model-alignment
+  author:
+    - literal: "Проказин М.Р."
+  title: "semantic-feedback-model-alignment"
+  url: "https://github.com/bearpro/semantic-feedback-model-alignment"
+  accessed:
+    year: 2026
+    month: 4
+    day: 30
