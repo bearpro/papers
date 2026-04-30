@@ -16,7 +16,7 @@ mdl-design:
 		-o './out/Проказин, Дизайн MDL.docx'
 
 nlp-linter:
-	pandoc './Статья nlp linter/paper-pro-max-v2.md' \
+	pandoc './Статья nlp linter/paper.md' \
 		--katex \
 		--resource-path='./Статья nlp linter/' \
 		--citeproc \

@@ -29,7 +29,7 @@
   issued:
     year: 2016
     month: 7
-  url: "https://www.omg.org/spec/ReqIF/1.2/"
+  url: "www.omg.org/spec/ReqIF/1.2/"
 
 - id: koutras-valentine-2021
   type: paper-conference
@@ -59,7 +59,7 @@
   issued:
     year: 2021
   doi: "10.1109/ICDE51399.2021.00047"
-  url: "https://doi.org/10.1109/ICDE51399.2021.00047"
+  url: "doi.org/10.1109/ICDE51399.2021.00047"
 
 - id: lopez-bdikit-demo-2026
   type: paper-conference
@@ -78,7 +78,7 @@
   issued:
     year: 2026
   doi: "10.1145/3788853.3801608"
-  url: "https://doi.org/10.1145/3788853.3801608"
+  url: "doi.org/10.1145/3788853.3801608"
 
 - id: liu-magneto-2025
   type: article-journal
@@ -101,7 +101,7 @@
   issued:
     year: 2025
   doi: "10.14778/3742728.3742757"
-  url: "https://doi.org/10.14778/3742728.3742757"
+  url: "doi.org/10.14778/3742728.3742757"
 
 - id: microsoft-lsp-3-17
   type: webpage
@@ -109,7 +109,7 @@
     - literal: "Microsoft"
   title: "Language Server Protocol Specification"
   version: "3.17"
-  url: "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
+  url: "microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
   accessed:
     year: 2026
     month: 4
@@ -127,3 +127,8 @@
   publisher-place: "Dordrecht"
   issued:
     year: 1997
+
+- id: github
+  type: webpage
+  author: Проказин М.Р.
+  url: github.com/bearpro/semantic-feedback-model-alignment
