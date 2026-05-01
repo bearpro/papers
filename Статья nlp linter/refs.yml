@@ -1,13 +1,18 @@
 - id: prokazin-ddl-ltlf
-  type: paper-conference
+  type: webpage
   author:
     - family: Проказин
       given: Михаил Русланович
   title: "Гибридный формализм описания нормативных требований DDL-LTLf"
-  container-title: "ИТ-Стандарт 2025: презентации и видео докладов"
+  genre: "доклад на конференции «ИТ-Стандарт 2025»"
+  note: "Презентации и видео докладов"
   issued:
     year: 2025
-  url: "https://www.cksit-rspp.ru/conferences/video-dokladov-it-standart-2025/"
+  URL: "https://www.cksit-rspp.ru/conferences/video-dokladov-it-standart-2025/"
+  accessed:
+    year: 2026
+    month: 4
+    day: 30
 
 - id: teremov-prokazin-rusreqif
   type: article-journal
@@ -20,18 +25,24 @@
   container-title: "ИТ-Стандарт"
   issued:
     year: 2025
-  url: "https://itstd-journal.ru/wp-content/uploads/2025/02/PROPOSALS-FOR-A-STANDARD-DESCRIBING-THE-ARCHITECTURE.pdf"
+  URL: "https://itstd-journal.ru/wp-content/uploads/2025/02/PROPOSALS-FOR-A-STANDARD-DESCRIBING-THE-ARCHITECTURE.pdf"
 
 - id: omg-reqif-1-2
-  type: standard
+  type: webpage
   author:
     - literal: "Object Management Group"
   title: "Requirements Interchange Format (ReqIF)"
-  version: "1.2"
+  edition: "Version 1.2"
+  genre: "specification"
   issued:
     year: 2016
     month: 7
-  url: "https://www.omg.org/spec/ReqIF/1.2/"
+  URL: "https://www.omg.org/spec/ReqIF/1.2/"
+  accessed:
+    year: 2026
+    month: 4
+    day: 30
+  language: en
 
 - id: rahm-bernstein-schema-matching-2001
   type: article-journal
@@ -47,8 +58,9 @@
   page: "334-350"
   issued:
     year: 2001
-  doi: "10.1007/s007780100057"
-  url: "https://doi.org/10.1007/s007780100057"
+  DOI: "10.1007/s007780100057"
+  URL: "https://doi.org/10.1007/s007780100057"
+  language: en
 
 - id: shvaiko-euzenat-ontology-matching-2013
   type: article-journal
@@ -64,8 +76,9 @@
   page: "158-176"
   issued:
     year: 2013
-  doi: "10.1109/TKDE.2011.253"
-  url: "https://doi.org/10.1109/TKDE.2011.253"
+  DOI: "10.1109/TKDE.2011.253"
+  URL: "https://doi.org/10.1109/TKDE.2011.253"
+  language: en
 
 - id: nute-defeasible-deontic-logic
   type: book
@@ -79,38 +92,42 @@
   publisher-place: "Dordrecht"
   issued:
     year: 1997
-  isbn: "0-7923-4630-0"
-  url: "https://unesdoc.unesco.org/ark:/48223/pf0000109572"
+  ISBN: "0-7923-4630-0"
+  URL: "https://unesdoc.unesco.org/ark:/48223/pf0000109572"
+  language: en
 
 - id: microsoft-lsp-3-17
   type: webpage
   author:
     - literal: "Microsoft"
   title: "Language Server Protocol Specification"
-  version: "3.17"
-  url: "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
+  edition: "Version 3.17"
+  URL: "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
   accessed:
     year: 2026
     month: 4
     day: 30
+  language: en
 
 - id: ecma-csharp-334-2023
-  type: standard
+  type: webpage
   author:
     - literal: "Ecma International"
   title: "ECMA-334: C# Language Specification"
-  version: "7th edition"
+  edition: "7th edition"
+  genre: "standard"
   issued:
     year: 2023
     month: 12
-  url: "https://ecma-international.org/publications-and-standards/standards/ecma-334/"
+  URL: "https://ecma-international.org/publications-and-standards/standards/ecma-334/"
   accessed:
     year: 2026
     month: 4
     day: 30
+  language: en
 
 - id: madaan-self-refine-2023
-  type: report
+  type: webpage
   author:
     - family: Madaan
       given: Aman
@@ -145,12 +162,18 @@
     - family: Clark
       given: Peter
   title: "Self-Refine: Iterative Refinement with Self-Feedback"
+  genre: "arXiv preprint arXiv:2303.17651"
   publisher: "arXiv"
   number: "arXiv:2303.17651"
   issued:
     year: 2023
-  doi: "10.48550/arXiv.2303.17651"
-  url: "https://arxiv.org/abs/2303.17651"
+  DOI: "10.48550/arXiv.2303.17651"
+  URL: "https://arxiv.org/abs/2303.17651"
+  accessed:
+    year: 2026
+    month: 4
+    day: 30
+  language: en
 
 - id: koutras-valentine-2021
   type: paper-conference
@@ -179,8 +202,9 @@
   publisher: "IEEE"
   issued:
     year: 2021
-  doi: "10.1109/ICDE51399.2021.00047"
-  url: "https://doi.org/10.1109/ICDE51399.2021.00047"
+  DOI: "10.1109/ICDE51399.2021.00047"
+  URL: "https://doi.org/10.1109/ICDE51399.2021.00047"
+  language: en
 
 - id: lopez-bdikit-demo-2026
   type: paper-conference
@@ -198,8 +222,9 @@
   publisher: "ACM"
   issued:
     year: 2026
-  doi: "10.1145/3788853.3801608"
-  url: "https://doi.org/10.1145/3788853.3801608"
+  DOI: "10.1145/3788853.3801608"
+  URL: "https://doi.org/10.1145/3788853.3801608"
+  language: en
 
 - id: liu-magneto-2025
   type: article-journal
@@ -221,8 +246,9 @@
   page: "2681-2694"
   issued:
     year: 2025
-  doi: "10.14778/3742728.3742757"
-  url: "https://doi.org/10.14778/3742728.3742757"
+  DOI: "10.14778/3742728.3742757"
+  URL: "https://doi.org/10.14778/3742728.3742757"
+  language: en
 
 - id: melnik-similarity-flooding-2002
   type: paper-conference
@@ -239,8 +265,9 @@
   publisher: "IEEE"
   issued:
     year: 2002
-  doi: "10.1109/ICDE.2002.994702"
-  url: "https://doi.org/10.1109/ICDE.2002.994702"
+  DOI: "10.1109/ICDE.2002.994702"
+  URL: "https://doi.org/10.1109/ICDE.2002.994702"
+  language: en
 
 - id: madhavan-cupid-2001
   type: paper-conference
@@ -257,7 +284,8 @@
   publisher: "VLDB Endowment"
   issued:
     year: 2001
-  url: "https://www.vldb.org/conf/2001/P049.pdf"
+  URL: "https://www.vldb.org/conf/2001/P049.pdf"
+  language: en
 
 - id: aumueller-coma-2005
   type: paper-conference
@@ -276,16 +304,20 @@
   publisher: "ACM"
   issued:
     year: 2005
-  doi: "10.1145/1066157.1066283"
-  url: "https://doi.org/10.1145/1066157.1066283"
+  DOI: "10.1145/1066157.1066283"
+  URL: "https://doi.org/10.1145/1066157.1066283"
+  language: en
 
 - id: github
   type: webpage
   author:
-    - literal: "Проказин М.Р."
-  title: "semantic-feedback-model-alignment"
-  url: "https://github.com/bearpro/semantic-feedback-model-alignment"
+    - family: Проказин
+      given: Михаил Русланович
+  title: "Публичный репозиторий с алгоритмами и артефактами эксперимента"
+  genre: "репозиторий GitHub"
+  URL: "https://github.com/bearpro/semantic-feedback-model-alignment"
   accessed:
     year: 2026
     month: 4
     day: 30
+  language: ru

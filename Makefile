@@ -20,6 +20,7 @@ nlp-linter:
 		--katex \
 		--resource-path='./Статья nlp linter/' \
 		--citeproc \
-		--reference-doc='./reference/it-standard-uncrappified.docx' \
+		--reference-doc='./reference/mk-623ri-reference.docx' \
+		--lua-filter='./reference/mk-623ri.lua' \
+		-M udk='004' \
 		-o './out/Проказин, NLP Linter.docx'
-	
