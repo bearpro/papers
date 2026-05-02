@@ -1,0 +1,10 @@
+math: katex
+bibliography: refs.yml
+csl: numeric.csl
+
+title: Методы и алгоритмы автоматизированного обнаружения противоречий в нормативных требованиях
+author:
+  - Проказин М.Р.
+date: "2026"
+lang: ru
+organization: РТУ МИРЭА

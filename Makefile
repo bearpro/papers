@@ -28,3 +28,12 @@ mdl-design: _out-dir
 		--filter pandoc-plantuml \
 		--reference-doc='./reference/it-standard-uncrappified.docx' \
 		-o './out/Проказин, Дизайн MDL.docx'
+
+dissertation-full: _out-dir
+	pandoc --defaults ./dissertation/full/main.yml \
+		--katex \
+		--filter pandoc-plantuml \
+		--reference-doc='./reference/mk-623ri-reference.docx' \
+		--lua-filter='./reference/mk-623ri.lua' \
+		--resource-path='./dissertation/full/' \
+		-o './out/Проказин, Автореферат к диссертации.docx'

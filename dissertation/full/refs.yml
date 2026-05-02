@@ -1,0 +1,16 @@
+- id: bruel-formalism-requirements
+  type: article-journal
+  author:
+    - family: Bruel
+      given: Jean-Michel
+    - family: Ebersold
+      given: Sophie
+    - family: Galinier
+      given: Florian
+    - family: Mazzara
+      given: Manuel
+    - family: Naumchev
+      given: Alexandr
+    - family: Meye
+      given: Bertrand
+  title: "The role of formalism in system requirements"

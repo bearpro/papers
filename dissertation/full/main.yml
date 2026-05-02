@@ -1,0 +1,21 @@
+metadata-files:
+  - ${.}/meta.yml
+
+input-files:
+  - ${.}/chapters/00-prelude.md
+  - ${.}/chapters/01-introduction.md
+  - ${.}/chapters/02-analysis.md
+  - ${.}/chapters/03-algorithms.md
+  - ${.}/chapters/04-implemntation.md
+  - ${.}/chapters/05-approbation.md
+  - ${.}/chapters/06-conclusion.md
+
+citeproc: true
+
+bibliography:
+  - refs.yml
+
+csl: ./numeric.csl
+
+resource-path:
+  - ${.}
