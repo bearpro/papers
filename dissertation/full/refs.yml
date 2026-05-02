@@ -1,16 +1,722 @@
-- id: bruel-formalism-requirements
-  type: article-journal
-  author:
-    - family: Bruel
-      given: Jean-Michel
-    - family: Ebersold
-      given: Sophie
-    - family: Galinier
-      given: Florian
-    - family: Mazzara
-      given: Manuel
-    - family: Naumchev
-      given: Alexandr
-    - family: Meye
-      given: Bertrand
-  title: "The role of formalism in system requirements"
+references:
+  - id: gost-1-1-2002
+    type: standard
+    title: "ГОСТ 1.1–2002 «Межгосударственная система стандартизации. Термины и определения»"
+    section: "6.1"
+
+  - id: iso-iec-ieee-29148-2018
+    type: standard
+    title: "Systems and software engineering — Life cycle processes — Requirements engineering"
+    issued:
+      year: 2018
+    publisher: "ISO/IEC/IEEE"
+    number: "29148:2018"
+
+  - id: bruel-formalism-requirements
+    type: article-journal
+    author:
+      - family: Bruel
+        given: Jean-Michel
+      - family: Ebersold
+        given: Sophie
+      - family: Galinier
+        given: Florian
+      - family: Mazzara
+        given: Manuel
+      - family: Naumchev
+        given: Alexandr
+      - family: Meye
+        given: Bertrand
+    title: "The role of formalism in system requirements"
+
+  - id: reqif-1-0-1
+    type: standard
+    title: "Requirements Interchange Format (ReqIF)"
+    version: "1.0.1"
+
+  - id: spreeuwenberg-healy-sbvr-cnl
+    type: article-journal
+    author:
+      - family: Spreeuwenberg
+      - family: Healy
+    title: "SBVR's Approach to Controlled Natural Language"
+
+  - id: sbvr-semantic-formulations-example
+    type: article-journal
+    title: Semantic Formulations in SBVR Example
+    container-title: Rule Languages for Interoperability
+    author: 
+    - family: Baisley
+      given: Don 
+    - family: Hall
+      given: John 
+    - family: Chapin
+      given: Donald 
+    url: https://api.semanticscholar.org/CorpusID:29960447
+    issued: 
+      year: 2005
+
+  - id: legalruleml-core-1-0
+    type: standard
+    author:
+      - literal: OASIS
+    title: LegalRuleML Core Specification
+    version: "1.0"
+
+  - id: de-giacomo-vardi-ltlf
+    type: article-journal
+    author:
+      - family: De Giacomo
+      - family: Vardi
+    title: Linear Temporal Logic and Linear Dynamic Logic on Finite Traces
+
+  - id: fionda-ltlf-complexity
+    type: article-journal
+    author:
+      - family: Fionda
+        given: Valeria
+      - family: Greco 
+        given: Gianluigi
+    title: "The Complexity of LTL on Finite Traces: Hard and Easy Fragments"
+
+  - id: lamport-tla
+    type: article-journal
+    author:
+      - family: Lamport
+        given: Leslie
+    title: "The Temporal Logic of Actions"
+
+  - id: nusmv-2-7-tutorial
+    type: webpage
+    author: 
+    - family: Roberto 
+      given: Cavada
+    - family: Alessandro 
+      given: Cimatti
+    - family: Gavin 
+      given: Keighren
+    - family: Emanuele 
+      given: Olivetti,
+    - family: Marco 
+      given: Pistore
+    - family: Marco 
+      given: Roveri
+    title: NuSMV 2.7 Tutorial
+    url: https://nusmv.fbk.eu/tutorial/v27/tutorial.pdf
+
+  - id: holzmann-spin
+    type: book
+    author:
+      - family: Holzmann
+        given: Gerard J.
+    title: "The Model Checker SPIN"
+
+  - id: sep-deontic-logic
+    type: entry-encyclopedia
+    author:
+      - literal: "Stanford Encyclopedia of Philosophy"
+    title: "Deontic Logic"
+
+  - id: nute-defeasible-logic
+    type: article-journal
+    author:
+      - family: Nute
+        given: Donald
+    title: "Defeasible Logic"
+
+  - id: governatori-pragmatic-oddity
+    type: article-journal
+    author:
+      - family: Governatori
+      - family: Colombo Tosatto
+      - family: Rotolo
+    title: "A Defeasible Deontic Logic for Pragmatic Oddity"
+
+  - id: padget-instal
+    type: article-journal
+    author:
+      - family: Padget
+      - family: Elakehal
+        given: Emad
+      - family: Li
+        given: Tingting
+      - family: De Vos
+        given: Marina
+    title: "InstAL: An Institutional Action Language"
+
+  - id: van-binsbergen-eflint
+    type: article-journal
+    author:
+      - family: van Binsbergen
+      - family: Liu
+        given: Lu-Chi
+      - family: van Doesburg
+        given: Robert 
+      - family: van Engers
+        given: Tom 
+    title: "eFLINT: a Domain-Specific Language for Executable Norm Specifications"
+
+  - id: dardenne-van-lamsweerde-fickas-1993
+    type: article-journal
+    author:
+      - family: Dardenne
+        given: Anne
+      - family: van Lamsweerde
+        given: Axel
+      - family: Fickas
+        given: Stephen
+    title: "Goal-Directed Requirements Acquisition"
+    container-title: "Science of Computer Programming"
+    volume: "20"
+    issue: "1-2"
+    issued:
+      year: 1993
+      month: 4
+
+  - id: van-lamsweerde-craft-to-discipline
+    type: article-journal
+    author:
+      - family: van Lamsweerde
+    title: "From Craft to Discipline: The Key Challenges of Requirements Engineering"
+
+  - id: akoma-ntoso-1-0
+    type: report
+    author:
+      - literal: OASIS
+    title: "Akoma Ntoso"
+    version: "1.0"
+
+  - id: machine-readable-law-concept
+    type: webpage
+    title: "Концепция развития технологий машиночитаемого права"
+    url: https://www.economy.gov.ru/material/file/792d50ea6a6f3a9c75f95494c253ab99/31_15092021.pdf
+
+  - id: sep-chisholm-paradox
+    type: entry-encyclopedia
+    author:
+      - literal: "Stanford Encyclopedia of Philosophy"
+    title: "Deontic Logic > A Bit More on Chisholm’s Paradox"
+
+  - id: biere-cimatti-clarke-zhu
+    type: article-journal
+    author:
+      - family: Biere
+        given: Armin 
+      - family: Cimatti
+        given: Alessandro 
+      - family: Clarke
+        given: Edmund 
+      - family: Zhu
+        given: Yunshan 
+    title: "Symbolic Model Checking without BDDs"
+    url: https://fmv.jku.at/papers/BiereCimattiClarkeZhu-TACAS99.pdf
+
+  - id: barrett-smt-tutorial
+    type: paper-conference
+    author:
+      - family: Barrett
+        given: Clark
+      - family: Tinelli
+        given: Cesare 
+      - family: Barbosa
+        given: Haniel 
+      - family: Niemetz
+        given: Aina 
+      - family: Preiner
+        given: Mathias 
+      - family: Reynolds
+        given: Andrew 
+      - family: Zohar 
+        given: Yoni 
+    title: "Satisfiability Modulo Theories: A Beginner’s Tutorial"
+    container-title: Formal Methods
+    issued: 
+      year: 2024
+      month: 9
+
+  - id: smt-lib-2-7
+    type: standard
+    title: "SMT-LIB Standard"
+    version: "2.7"
+    url: https://smt-lib.org/papers/smt-lib-reference-v2.7-r2025-02-05.pdf
+
+  - id: bounded-model-checking
+    type: article-journal
+    author:
+      - family: Biere
+        given: Armin 
+      - family: Cimatti
+        given: Alessandro 
+      - family: Clarke
+        given: Edmund 
+      - family: Strichman
+        given: Ofer 
+      - family: Zhu
+        given: Yunshan 
+    title: "Bounded Model Checking"
+    container-title: Advances in Computers.
+    volume: "58"
+    issued:
+      year: 2003
+
+  - id: kaos-tutorial
+    type: webpage
+    title: "KAOS Tutorial"
+    issued:
+      year: 2007
+      month: 10
+    url: https://www.objectiver.com/fileadmin/download/documents/KaosTutorial.pdf
+
+  - id: boella-normative-mas
+    type: article-journal
+    author:
+      - family: Boella
+        given: Guido
+      - family: van der Torre 
+        given: Leendert
+      - family: Verhagen
+        given: Harko
+    title: Introduction to Normative Multiagent Systems
+    container-title: Computational & Mathematical Organization Theory
+    url: https://link.springer.com/article/10.1007/s10588-006-9537-7#citeas
+
+  - id: hannoun-moise
+    type: paper-conference
+    author:
+      - family: Hannoun
+        given: Mahdi
+      - family: Boissier
+        given: Olivier
+      - family: Sichman
+        given: Jaime S.
+      - family: Sayettat
+        given: Claudette
+    title: "An Organization Model for Multi-Agent Systems — MOISE"
+    container-title: Advances in Artificial Intelligence
+    url: https://link.springer.com/chapter/10.1007/3-540-44399-1_17
+    issued:
+      year: 2000
+
+  - id: pnst-smart-standards-general
+    type: standard
+    title: ПНСТ 864-2023 «Умные (SMART) стандарты. Общие положения»
+    issued:
+      year: 2024
+
+  - id: golovin-standards-digitalization
+    type: article-journal
+    title: Цифровая трансформация стандартизации требует системного подхода и практических действий
+    container-title: ИТ-Стандарт
+    author:
+    - family: Головин
+      given: С. А.
+    - family: Лоцманов
+      given: А. Н.
+    - family: Тихомиров 
+      given: С. Г.
+    issued: 2023
+
+  - id: prokazin-contradictions-review
+    title: Применение методов ИИ для определения противоречий и ограничений в ссылочных стандартах и других законодательных и нормативных документах - Обзор актуальных задач
+    container-title: Конференция ИТ-Стандарт
+    type: paper-conference
+    author: 
+    - family: Проказин
+      given: М. Р.
+    issued: 2023
+
+  - id: yu-istar
+    title: "Enterprise modelling for business redesign: the i* framework"
+    container-title: ACM SIGGROUP Bulletin
+    type: article-journal
+    author:
+    - family: Yu
+      given: Erick S. K.
+    - family: Mylopoulos
+      given: John
+    volume: 18
+    issue: 1
+    page: 59-63
+    publisher: ACM
+    language: en
+    url: https://dl.acm.org/doi/pdf/10.1145/271159.271180
+
+  - id: kadakolmath-istar-z
+    type: article-journal
+    title: iStar Goal Model to Z Formal Model Translation and Model Checking of CBTC Moving Block Interlocking System
+    author: 
+    - family: Kadakolmath
+      given: Lokanna
+    - family: Ramu
+      given: Umesh D.
+
+  - id: boley-ruleml
+    type: article-journal
+    title: "Design Rationale of RuleML: A Markup Language for Semantic Web Rules"
+    author:
+    - family: Boley
+      given: Harold
+    - family: Tabet
+      given: Said
+    - family: Wagner
+      given: Gerd
+
+  - id: cliffe-instal
+    title: Specifying and reasoning about multiple institutions
+    type: article-journal
+    author: 
+    - family: Cliffe 
+      given: Owen 
+    - family: De Vos 
+      given: Marina 
+    - family: Padget 
+      given: Julian
+
+  - id: moise-npm
+    type: webpage
+    title: Исходный код MOISE+ NPM
+    url: https://github.com/moise-lang/npl
+
+  - id: kamkin-formal-verification
+    title: Введение в формальные методы верификации программ
+    author:
+    - family: Камкин 
+      given: А. С.
+    type: book
+    issue:
+      year: 2018
+    url: http://sp.cs.msu.ru/courses/vmp/kamkin_mc2018.pdf
+
+  - id: karavaev-deontic-issues
+    title: Еще раз о трудностях построения деонтической логики
+    type: article-journal
+    author:
+    - family: Караваев
+      given: Э. Ф.
+    issue:
+      year: 2005
+    url: https://cyberleninka.ru/article/n/esche-raz-o-trudnostyah-postroeniya-deonticheskoy-logiki
+
+  - id: prokazin-ddl-ltlf
+    type: webpage
+    author:
+      - family: Проказин
+        given: Михаил Русланович
+    title: "Гибридный формализм описания нормативных требований DDL-LTLf"
+    genre: "доклад на конференции «ИТ-Стандарт 2025»"
+    note: "Презентации и видео докладов"
+    issued:
+      year: 2025
+    URL: "https://www.cksit-rspp.ru/conferences/video-dokladov-it-standart-2025/"
+    accessed:
+      year: 2026
+      month: 4
+      day: 30
+
+  - id: teremov-prokazin-rusreqif
+    type: article-journal
+    title: "Предложения к стандарту, описывающему архитектуру и формат данных умных стандартов"
+    author:
+      - family: Проказин
+        given: Михаил Русланович
+      - family: Теремов
+        given: Иван Алексеевич
+    container-title: "ИТ-Стандарт"
+    issued:
+      year: 2025
+    URL: "https://itstd-journal.ru/wp-content/uploads/2025/02/PROPOSALS-FOR-A-STANDARD-DESCRIBING-THE-ARCHITECTURE.pdf"
+
+  - id: omg-reqif-1-2
+    type: webpage
+    author:
+      - literal: "Object Management Group"
+    title: "Requirements Interchange Format (ReqIF)"
+    edition: "Version 1.2"
+    genre: "specification"
+    issued:
+      year: 2016
+      month: 7
+    URL: "https://www.omg.org/spec/ReqIF/1.2/"
+    accessed:
+      year: 2026
+      month: 4
+      day: 30
+    language: en
+
+  - id: rahm-bernstein-schema-matching-2001
+    type: article-journal
+    author:
+      - family: Rahm
+        given: Erhard
+      - family: Bernstein
+        given: Philip A.
+    title: "A Survey of Approaches to Automatic Schema Matching"
+    container-title: "The VLDB Journal"
+    volume: "10"
+    issue: "4"
+    page: "334-350"
+    issued:
+      year: 2001
+    DOI: "10.1007/s007780100057"
+    URL: "https://doi.org/10.1007/s007780100057"
+    language: en
+
+  - id: shvaiko-euzenat-ontology-matching-2013
+    type: article-journal
+    author:
+      - family: Shvaiko
+        given: Pavel
+      - family: Euzenat
+        given: Jérôme
+    title: "Ontology Matching: State of the Art and Future Challenges"
+    container-title: "IEEE Transactions on Knowledge and Data Engineering"
+    volume: "25"
+    issue: "1"
+    page: "158-176"
+    issued:
+      year: 2013
+    DOI: "10.1109/TKDE.2011.253"
+    URL: "https://doi.org/10.1109/TKDE.2011.253"
+    language: en
+
+  - id: nute-defeasible-deontic-logic
+    type: book
+    editor:
+      - family: Nute
+        given: Donald
+    title: "Defeasible Deontic Logic"
+    collection-title: "Synthese Library"
+    volume: "263"
+    publisher: "Kluwer Academic Publishers"
+    publisher-place: "Dordrecht"
+    issued:
+      year: 1997
+    ISBN: "0-7923-4630-0"
+    URL: "https://unesdoc.unesco.org/ark:/48223/pf0000109572"
+    language: en
+
+  - id: microsoft-lsp-3-17
+    type: webpage
+    author:
+      - literal: "Microsoft"
+    title: "Language Server Protocol Specification"
+    edition: "Version 3.17"
+    URL: "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
+    accessed:
+      year: 2026
+      month: 4
+      day: 30
+    language: en
+
+  - id: ecma-csharp-334-2023
+    type: webpage
+    author:
+      - literal: "Ecma International"
+    title: "ECMA-334: C# Language Specification"
+    edition: "7th edition"
+    genre: "standard"
+    issued:
+      year: 2023
+      month: 12
+    URL: "https://ecma-international.org/publications-and-standards/standards/ecma-334/"
+    accessed:
+      year: 2026
+      month: 4
+      day: 30
+    language: en
+
+  - id: madaan-self-refine-2023
+    type: webpage
+    author:
+      - family: Madaan
+        given: Aman
+      - family: Tandon
+        given: Niket
+      - family: Gupta
+        given: Prakhar
+      - family: Hallinan
+        given: Skyler
+      - family: Gao
+        given: Luyu
+      - family: Wiegreffe
+        given: Sarah
+      - family: Alon
+        given: Uri
+      - family: Dziri
+        given: Nouha
+      - family: Prabhumoye
+        given: Shrimai
+      - family: Yang
+        given: Yiming
+      - family: Gupta
+        given: Shashank
+      - family: Majumder
+        given: Bodhisattwa Prasad
+      - family: Hermann
+        given: Katherine
+      - family: Welleck
+        given: Sean
+      - family: Yazdanbakhsh
+        given: Amir
+      - family: Clark
+        given: Peter
+    title: "Self-Refine: Iterative Refinement with Self-Feedback"
+    genre: "arXiv preprint arXiv:2303.17651"
+    publisher: "arXiv"
+    number: "arXiv:2303.17651"
+    issued:
+      year: 2023
+    DOI: "10.48550/arXiv.2303.17651"
+    URL: "https://arxiv.org/abs/2303.17651"
+    accessed:
+      year: 2026
+      month: 4
+      day: 30
+    language: en
+
+  - id: koutras-valentine-2021
+    type: paper-conference
+    author:
+      - family: Koutras
+        given: Christos
+      - family: Siachamis
+        given: George
+      - family: Ionescu
+        given: Andra
+      - family: Psarakis
+        given: Kyriakos
+      - family: Brons
+        given: Jerry
+      - family: Fragkoulis
+        given: Marios
+      - family: Lofi
+        given: Christoph
+      - family: Bonifati
+        given: Angela
+      - family: Katsifodimos
+        given: Asterios
+    title: "Valentine: Evaluating Matching Techniques for Dataset Discovery"
+    container-title: "2021 IEEE 37th International Conference on Data Engineering (ICDE)"
+    page: "468-479"
+    publisher: "IEEE"
+    issued:
+      year: 2021
+    DOI: "10.1109/ICDE51399.2021.00047"
+    URL: "https://doi.org/10.1109/ICDE51399.2021.00047"
+    language: en
+
+  - id: lopez-bdikit-demo-2026
+    type: paper-conference
+    author:
+      - family: Lopez
+        given: Roque
+      - family: Liu
+        given: Yurong
+      - family: Koutras
+        given: Christos
+      - family: Freire
+        given: Juliana
+    title: "BDI-Kit Demo: A Toolkit for Programmable and Conversational Data Harmonization"
+    container-title: "Companion of the International Conference on Management of Data (SIGMOD Companion '26)"
+    publisher: "ACM"
+    issued:
+      year: 2026
+    DOI: "10.1145/3788853.3801608"
+    URL: "https://doi.org/10.1145/3788853.3801608"
+    language: en
+
+  - id: liu-magneto-2025
+    type: article-journal
+    author:
+      - family: Liu
+        given: Yurong
+      - family: Pena
+        given: Eduardo H. M.
+      - family: Santos
+        given: Aécio
+      - family: Wu
+        given: Eden
+      - family: Freire
+        given: Juliana
+    title: "Magneto: Combining Small and Large Language Models for Schema Matching"
+    container-title: "Proceedings of the VLDB Endowment"
+    volume: "18"
+    issue: "8"
+    page: "2681-2694"
+    issued:
+      year: 2025
+    DOI: "10.14778/3742728.3742757"
+    URL: "https://doi.org/10.14778/3742728.3742757"
+    language: en
+
+  - id: melnik-similarity-flooding-2002
+    type: paper-conference
+    author:
+      - family: Melnik
+        given: Sergey
+      - family: Garcia-Molina
+        given: Hector
+      - family: Rahm
+        given: Erhard
+    title: "Similarity Flooding: A Versatile Graph Matching Algorithm and Its Application to Schema Matching"
+    container-title: "Proceedings 18th International Conference on Data Engineering"
+    page: "117-128"
+    publisher: "IEEE"
+    issued:
+      year: 2002
+    DOI: "10.1109/ICDE.2002.994702"
+    URL: "https://doi.org/10.1109/ICDE.2002.994702"
+    language: en
+
+  - id: madhavan-cupid-2001
+    type: paper-conference
+    author:
+      - family: Madhavan
+        given: Jayant
+      - family: Bernstein
+        given: Philip A.
+      - family: Rahm
+        given: Erhard
+    title: "Generic Schema Matching with Cupid"
+    container-title: "Proceedings of the 27th International Conference on Very Large Data Bases"
+    page: "49-58"
+    publisher: "VLDB Endowment"
+    issued:
+      year: 2001
+    URL: "https://www.vldb.org/conf/2001/P049.pdf"
+    language: en
+
+  - id: aumueller-coma-2005
+    type: paper-conference
+    author:
+      - family: Aumueller
+        given: David
+      - family: Do
+        given: Hong-Hai
+      - family: Massmann
+        given: Sabine
+      - family: Rahm
+        given: Erhard
+    title: "Schema and Ontology Matching with COMA++"
+    container-title: "Proceedings of the 2005 ACM SIGMOD International Conference on Management of Data"
+    page: "906-908"
+    publisher: "ACM"
+    issued:
+      year: 2005
+    DOI: "10.1145/1066157.1066283"
+    URL: "https://doi.org/10.1145/1066157.1066283"
+    language: en
+
+  - id: github
+    type: webpage
+    author:
+      - family: Проказин
+        given: Михаил Русланович
+    title: "Публичный репозиторий с алгоритмами и артефактами эксперимента"
+    genre: "репозиторий GitHub"
+    URL: "https://github.com/bearpro/semantic-feedback-model-alignment"
+    accessed:
+      year: 2026
+      month: 4
+      day: 30
+    language: ru

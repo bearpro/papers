@@ -9,6 +9,7 @@ input-files:
   - ${.}/chapters/04-implemntation.md
   - ${.}/chapters/05-approbation.md
   - ${.}/chapters/06-conclusion.md
+  - ${.}/chapters/07-refs.md
 
 citeproc: true
 
