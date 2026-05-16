@@ -20,14 +20,14 @@ semantic-feedback-pre: _out-dir
 		-o './out/Проказин, NLP Linter.docx'
 
 semantic-feedback-final: _out-dir
-	pandoc './papers/03-semantic-feedback-pre/paper.md' \
+	pandoc './papers/03-semantic-feedback-final/paper.md' \
 		--katex \
-		--resource-path='./papers/03-semantic-feedback-pre/' \
+		--resource-path='./papers/03-semantic-feedback-final/' \
 		--citeproc \
 		--reference-doc='./reference/mk-623ri-reference.docx' \
 		--lua-filter='./reference/mk-623ri.lua' \
 		-M udk='004' \
-		-o './out/Проказин, NLP Linter.docx'
+		-o './out/Проказин, Семантическая обратная связь.docx'
 
 
 mdl-design: _out-dir

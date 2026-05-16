@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" default-locale="ru-RU">
+  <info>
+    <title>Simple numeric style for Pandoc</title>
+    <id>http://www.zotero.org/styles/simple-numeric-pandoc</id>
+    <link href="http://www.zotero.org/styles/simple-numeric-pandoc" rel="self"/>
+    <author>
+      <name>Generated for article draft</name>
+    </author>
+    <category citation-format="numeric"/>
+    <category field="generic-base"/>
+    <updated>2026-05-16T00:00:00+00:00</updated>
+  </info>
+  <macro name="author">
+    <names variable="author">
+      <name and="text" delimiter=", " initialize-with=". "/>
+      <substitute>
+        <names variable="editor"/>
+        <text variable="publisher"/>
+      </substitute>
+    </names>
+  </macro>
+  <macro name="issued">
+    <choose>
+      <if variable="issued">
+        <date variable="issued">
+          <date-part name="year"/>
+        </date>
+      </if>
+    </choose>
+  </macro>
+  <macro name="container">
+    <choose>
+      <if variable="container-title">
+        <text variable="container-title" prefix=" // "/>
+      </if>
+    </choose>
+  </macro>
+  <macro name="pages">
+    <choose>
+      <if variable="page">
+        <text variable="page" prefix=". С. "/>
+      </if>
+    </choose>
+  </macro>
+  <macro name="doi-url">
+    <choose>
+      <if variable="DOI">
+        <text variable="DOI" prefix=". DOI: "/>
+      </if>
+      <else-if variable="URL">
+        <text variable="URL" prefix=". URL: "/>
+      </else-if>
+    </choose>
+  </macro>
+  <citation collapse="citation-number">
+    <sort>
+      <key variable="citation-number"/>
+    </sort>
+    <layout prefix="[" suffix="]" delimiter=", ">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+  <bibliography entry-spacing="0" second-field-align="flush">
+    <layout suffix=".">
+      <text variable="citation-number" prefix="[" suffix="] "/>
+      <text macro="author" suffix=". "/>
+      <text variable="title"/>
+      <text macro="container"/>
+      <text variable="publisher" prefix=". "/>
+      <text macro="pages"/>
+      <text macro="issued" prefix=". "/>
+      <text macro="doi-url"/>
+    </layout>
+  </bibliography>
+</style>
