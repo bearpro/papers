@@ -9,10 +9,20 @@ ddl-ltlf: _out-dir
 		--reference-doc='./reference/it-standard-uncrappified.docx' \
 		-o './out/Проказин, DDL-LTLf.docx'
 
-nlp-linter: _out-dir
-	pandoc './papers/02-nlp-linter/paper.md' \
+semantic-feedback-pre: _out-dir
+	pandoc './papers/02-semantic-feedback-pre/paper.md' \
 		--katex \
-		--resource-path='./papers/02-nlp-linter/' \
+		--resource-path='./papers/02-semantic-feedback-pre/' \
+		--citeproc \
+		--reference-doc='./reference/mk-623ri-reference.docx' \
+		--lua-filter='./reference/mk-623ri.lua' \
+		-M udk='004' \
+		-o './out/Проказин, NLP Linter.docx'
+
+semantic-feedback-final: _out-dir
+	pandoc './papers/03-semantic-feedback-pre/paper.md' \
+		--katex \
+		--resource-path='./papers/03-semantic-feedback-pre/' \
 		--citeproc \
 		--reference-doc='./reference/mk-623ri-reference.docx' \
 		--lua-filter='./reference/mk-623ri.lua' \
@@ -21,9 +31,9 @@ nlp-linter: _out-dir
 
 
 mdl-design: _out-dir
-	pandoc './papers/03-mdl-design/papper.md' \
+	pandoc './papers/04-mdl-design/papper.md' \
 		--katex \
-		--resource-path='./papers/03-mdl-design/' \
+		--resource-path='./papers/04-mdl-design/' \
 		--citeproc \
 		--filter pandoc-plantuml \
 		--reference-doc='./reference/it-standard-uncrappified.docx' \
