@@ -20,6 +20,28 @@
   container-title: "ИТ-Стандарт"
   note: "Уточнить полные библиографические данные перед подачей"
 
+- id: golovin-standards-digitalization
+  type: article-journal
+  title: Цифровая трансформация стандартизации требует системного подхода и практических действий
+  container-title: ИТ-Стандарт
+  author:
+  - family: Головин
+    given: С. А.
+  - family: Лоцманов
+    given: А. Н.
+  - family: Тихомиров 
+    given: С. Г.
+  issued: 2023
+
+- id: prokazin-mdl
+  type: webpage
+  author:
+  - family: Проказин
+    given: Михаил Русланович
+  title: Публичный репозиторий с исходным кодом MDL
+  genre: репозиторий GitHub
+  URL: "https://github.com/bearpro/standard-contradictions/tree/master/mdl-v3"
+
 - id: fowler2010dsl
   type: book
   title: "Domain-Specific Languages"
