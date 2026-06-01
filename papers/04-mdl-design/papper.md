@@ -13,7 +13,7 @@ _Аннотация_
 обладающей достаточно выразительной формальной моделью, системой модулей,
 прослеживаемость к источнику, и пригодным для автоматизации создания программ на
 языке. В работе проведён обзор решений в дизайне языка, удовлетворяющих данным
-требованиям, на примере ранее представленного ранее формализма DDL-LTLF.
+требованиям, на примере представленного ранее формализма DDL-LTLF.
 
 _Ключевые слова:_ требования, нормативные документы, промежуточное
 представление, деонтическая логика, LTLf, DSL, трассируемость, поиск
@@ -154,7 +154,7 @@ MDL является DSL (доменно-специфичным языком), �
 семантики. Рассмотрим пример описания прямой трубы заданой длины и радиуса на
 MDL.
 
-```mdl
+```{.plain}
 type Pipe = { length: rat, radius: rat }
 
 func has_positive_geometry(p: Pipe) -> bool:
@@ -173,7 +173,7 @@ func has_positive_geometry(p: Pipe) -> bool:
 На темпоральном уровне булевы выражения могут быть связаны темпоральными
 операторами. Таким образом строятся выражения наподобие
 
-```mdl
+```{.plain}
 has_positive_geometry(pipe) always
 ```
 
@@ -182,7 +182,7 @@ has_positive_geometry(pipe) always
 [@degiacomo2013ltlf]. При этом темпоральные выражения имеют место только в
 правилах, определяемых на деонтическом уровне:
 
-```mdl
+```{.plain}
 entity pipe: Pipe
 
 rule O positive_gemetry: has_positive_geometry(pipe) always
@@ -199,7 +199,7 @@ DDL-LTLf, позволя определять модальность $\{O,F,P\}$
 Кроме того, на деонтическом уровне реализована дефизибельность
 [@governatori2018practical]. Рассмотрим пример:
 
-```mdl
+```{.plain}
 rule O perform_work when scheduled: work_done eventually
 
 strict rule F unsafe_mode: system_unsafe always
@@ -239,7 +239,7 @@ MDL. На уровне языка определены примитивные т
 
 Типы-произведения описывают объекты с множеством атрибутов
 
-```mdl
+```{.plain}
 type Pipe = { length: rat, radius: rat }
 
 entity pipe: Pipe
@@ -249,7 +249,7 @@ rule O exact_size: pipe = Pipe { length = 10, radius = 1 }
 
 Типы-суммы, в свою очередь, описывают _варианты_ объекта, например
 
-```mdl
+```{.plain}
 type Number = int | rat
 ```
 
@@ -257,7 +257,7 @@ type Number = int | rat
 уровне языка а на уровне стандартной библиотеки. Например, список определён как
 параметрический тип-сумма:
 
-```mdl
+```{.plain}
 module std.collections.list
 
 type List<T> = Empty | Cons(T, List<T>)
@@ -277,7 +277,7 @@ func len<T>(l: List<T>) -> int:
 структуре) моделями, в системе предусмотрена операция `align`. Эта операция
 принимает ряд mdl модулей, и возвращает новый alignment-модуль, например
 
-```mdl
+```{.plain}
 module alignment_pipe_tube
 
 import "./pipe.mdl" as m1
@@ -325,7 +325,7 @@ Python DSL синтаксисе.
 
 Пример эквивалентных MDL модулей:
 
-```python
+```{.plain}
 from mdl.builder import ModelBuilder, always, call, ref
 
 m = ModelBuilder("email")
@@ -333,7 +333,9 @@ m.entity("email", "string")
 m.rule("email_addr_spec_correct", "O", always(call("email_is_correct", ref("email"))))
 ```
 
-```mdl
+<br/>
+
+```{.plain}
 module email
 
 entity email: string
@@ -379,4 +381,5 @@ MDL, как в процессе процедурного извлечения п
 
 # Источники
 
-::: {#refs} :::
+::: {#refs}  
+:::

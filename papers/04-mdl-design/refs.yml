@@ -10,15 +10,16 @@
   note: "OMG formal specification"
 
 - id: prokazin2026ddl
-  type: paper-conference
-  title: "DDL-LTLf: деонтическо-темпоральный формализм для поиска противоречий в нормативных документах"
+  type: article-journal
+  title: "Гибридный формализм описания нормативных требований"
   author:
     - family: "Проказин"
       given: "М. Р."
   issued:
     - year: 2026
   container-title: "ИТ-Стандарт"
-  note: "Уточнить полные библиографические данные перед подачей"
+  issue: "2"
+  page: "152-166"
 
 - id: golovin-standards-digitalization
   type: article-journal

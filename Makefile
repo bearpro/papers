@@ -35,7 +35,9 @@ mdl-design: _out-dir
 		--resource-path='./papers/04-mdl-design/' \
 		--citeproc \
 		--filter pandoc-plantuml \
-		--reference-doc='./reference/it-standard-uncrappified.docx' \
+		--reference-doc='./reference/mk-623ri-reference.docx' \
+		--lua-filter='./reference/mk-623ri.lua' \
+		--highlight-style=tango \
 		-o './out/Проказин, Дизайн MDL.docx'
 
 dissertation-full: _out-dir
