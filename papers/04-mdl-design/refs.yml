@@ -227,3 +227,442 @@
   container-title: "Proceedings of the Seventh International Workshop on Automated Semantic Analysis of Information in Legal Text (ASAIL 2025)"
   collection-title: "CEUR Workshop Proceedings"
   URL: "https://ceur-ws.org/Vol-4174/paper7.pdf"
+- id: omg2014ocl24
+  type: report
+  title: "Object Constraint Language, Version 2.4"
+  author:
+    - literal: "Object Management Group"
+  issued:
+    year: 2014
+    month: 2
+  genre: "OMG formal specification"
+  URL: "https://www.omg.org/spec/OCL/2.4/PDF"
+
+- id: richters2002ocl
+  type: chapter
+  title: "OCL: Syntax, Semantics, and Tools"
+  author:
+    - family: Richters
+      given: Mark
+    - family: Gogolla
+      given: Martin
+  editor:
+    - family: Clark
+      given: Tony
+    - family: Warmer
+      given: Jos
+  issued:
+    year: 2002
+  container-title: "Object Modeling with the OCL"
+  collection-title: "Lecture Notes in Computer Science"
+  volume: 2263
+  page: 42-68
+  publisher: Springer
+  DOI: 10.1007/3-540-45669-4_4
+
+- id: schuerr2002ocl-typechecking
+  type: chapter
+  title: "A New Type Checking Approach for OCL Version 2.0?"
+  author:
+    - family: Schürr
+      given: Andy
+  editor:
+    - family: Clark
+      given: Tony
+    - family: Warmer
+      given: Jos
+  issued:
+    year: 2002
+  container-title: "Object Modeling with the OCL"
+  collection-title: "Lecture Notes in Computer Science"
+  volume: 2263
+  page: 21-41
+  publisher: Springer
+  DOI: 10.1007/3-540-45669-4_3
+
+- id: cabot2012ocl
+  type: chapter
+  title: "Object Constraint Language (OCL): A Definitive Guide"
+  author:
+    - family: Cabot
+      given: Jordi
+    - family: Gogolla
+      given: Martin
+  issued:
+    year: 2012
+  container-title: "Formal Methods for Model-Driven Engineering"
+  collection-title: "Lecture Notes in Computer Science"
+  volume: 7320
+  page: 58-90
+  publisher: Springer
+  DOI: 10.1007/978-3-642-30982-3_3
+
+- id: steimann2025oclsharp
+  type: article-journal
+  title: "Meet OCL#: A Relational Object Constraint Language"
+  author:
+    - family: Steimann
+      given: Friedrich
+    - family: Clarisó
+      given: Robert
+    - family: Gogolla
+      given: Martin
+  issued:
+    year: 2025
+  container-title: "Software and Systems Modeling"
+  volume: 24
+  page: 1737-1761
+  DOI: 10.1007/s10270-025-01286-1
+
+- id: cariou2010ocl-contracts
+  type: article-journal
+  title: "OCL Contracts for the Verification of Model Transformations"
+  author:
+    - family: Cariou
+      given: Eric
+    - family: Belloir
+      given: Nicolas
+    - family: Barbier
+      given: Franck
+    - family: Djemam
+      given: Nidal
+  issued:
+    year: 2010
+  container-title: "Electronic Communications of the EASST"
+  volume: 24
+  DOI: 10.14279/tuj.eceasst.24.326
+
+- id: alloy-language-reference
+  type: report
+  title: "Alloy Language Reference"
+  author:
+    - literal: "Alloy Tools Project"
+  URL: "https://alloytools.org/download/alloy-language-reference.pdf"
+
+- id: alloy-docs
+  type: webpage
+  title: "Alloy Documentation: Language"
+  author:
+    - literal: "Alloy Tools Project"
+  URL: "https://alloy.readthedocs.io/en/latest/language/"
+
+- id: jackson2002alloy
+  type: article-journal
+  title: "Alloy: A Lightweight Object Modelling Notation"
+  author:
+    - family: Jackson
+      given: Daniel
+  issued:
+    year: 2002
+  container-title: "ACM Transactions on Software Engineering and Methodology"
+  volume: 11
+  issue: 2
+  page: 256-290
+  DOI: 10.1145/505145.505149
+
+- id: giannakopoulos2009opsem-alloy
+  type: paper-conference
+  title: "Towards an Operational Semantics for Alloy"
+  author:
+    - family: Giannakopoulos
+      given: Theophilos
+    - family: Dougherty
+      given: Daniel J.
+    - family: Fisler
+      given: Kathi
+    - family: Krishnamurthi
+      given: Shriram
+  editor:
+    - family: Cavalcanti
+      given: Ana
+    - family: Dams
+      given: Dennis
+  issued:
+    year: 2009
+  container-title: "FM 2009: Formal Methods"
+  collection-title: "Lecture Notes in Computer Science"
+  volume: 5850
+  page: 483-498
+  publisher: Springer
+  DOI: 10.1007/978-3-642-05089-3_31
+
+- id: gheyi2007static-alloy
+  type: article-journal
+  title: "A Static Semantics for Alloy and Its Impact in Refactorings"
+  author:
+    - family: Gheyi
+      given: Rohit
+    - family: Massoni
+      given: Tiago
+    - family: Borba
+      given: Paulo
+  issued:
+    year: 2007
+  container-title: "Electronic Notes in Theoretical Computer Science"
+  volume: 184
+  page: 209-233
+  DOI: 10.1016/j.entcs.2007.03.023
+
+- id: anastasakis2007alloy-transformations
+  type: paper-conference
+  title: "Analysis of Model Transformations via Alloy"
+  author:
+    - family: Anastasakis
+      given: Kyriakos
+    - family: Bordbar
+      given: Behzad
+    - family: Küster
+      given: Jochen M.
+  issued:
+    year: 2007
+  container-title: "Proceedings of the 4th Workshop on Model-Driven Engineering, Verification and Validation"
+  page: 47-56
+
+- id: abrial2010eventb-book
+  type: book
+  title: "Modeling in Event-B: System and Software Engineering"
+  author:
+    - family: Abrial
+      given: Jean-Raymond
+  issued:
+    year: 2010
+  publisher: "Cambridge University Press"
+  ISBN: "978-0-521-89556-9"
+  DOI: 10.1017/CBO9781139195881
+
+- id: eventb-math-language
+  type: webpage
+  title: "Event-B Mathematical Language"
+  author:
+    - literal: "Event-B Wiki"
+  URL: "https://wiki.event-b.org/index.php/Event-B_Mathematical_Language"
+
+- id: metayer2009eventb-kernel
+  type: report
+  title: "The Event-B Mathematical Language"
+  author:
+    - family: Métayer
+      given: C.
+    - family: Voisin
+      given: L.
+  issued:
+    year: 2009
+  genre: "Kernel language specification"
+  URL: "https://web-archive.southampton.ac.uk/deploy-eprints.ecs.soton.ac.uk/11/4/kernel_lang.pdf"
+
+- id: rodin-handbook
+  type: book
+  title: "Rodin User's Handbook"
+  author:
+    - literal: "Rodin Platform"
+  URL: "https://stups.hhu-hosting.de/handbook/rodin/current/pdf/rodin-doc.pdf"
+
+- id: abrial2010rodin
+  type: article-journal
+  title: "Rodin: An Open Toolset for Modelling and Reasoning in Event-B"
+  author:
+    - family: Abrial
+      given: Jean-Raymond
+    - family: Butler
+      given: Michael J.
+    - family: Hallerstede
+      given: Stefan
+    - family: Hoang
+      given: Thai Son
+    - family: Mehta
+      given: Farhad
+    - family: Voisin
+      given: Laurent
+  issued:
+    year: 2010
+  container-title: "International Journal on Software Tools for Technology Transfer"
+  volume: 12
+  issue: 6
+  page: 447-466
+  DOI: 10.1007/s10009-010-0145-y
+
+- id: farrell2022eventb-institution
+  type: article-journal
+  title: "Building Specifications in the Event-B Institution"
+  author:
+    - family: Farrell
+      given: Marie
+    - family: Monahan
+      given: Rosemary
+    - family: Power
+      given: James F.
+  issued:
+    year: 2022
+  container-title: "Logical Methods in Computer Science"
+  volume: 18
+  issue: 4
+  DOI: "10.46298/lmcs-18(4:4)2022"
+
+- id: stock2024trace-preservation-eventb
+  type: article-journal
+  title: "Trace Preservation in B and Event-B Refinements"
+  author:
+    - family: Stock
+      given: Sebastian
+    - family: Mashkoor
+      given: Atif
+    - family: Leuschel
+      given: Michael
+    - family: Egyed
+      given: Alexander
+  issued:
+    year: 2024
+  container-title: "Journal of Logical and Algebraic Methods in Programming"
+  volume: 137
+  page: 100943
+  DOI: 10.1016/j.jlamp.2024.100943
+
+- id: alkhammash2015traceable-eventb
+  type: article-journal
+  title: "Building Traceable Event-B Models from Requirements"
+  author:
+    - family: Alkhammash
+      given: Eman
+    - family: Butler
+      given: Michael
+    - family: Fathabadi
+      given: Asieh Salehi
+    - family: Cîrstea
+      given: Corina
+  issued:
+    year: 2015
+  container-title: "Science of Computer Programming"
+  volume: 111
+  page: 318-338
+  DOI: 10.1016/j.scico.2015.06.002
+
+- id: deharbe2014rodin-smt
+  type: article-journal
+  title: "Integrating SMT Solvers in Rodin"
+  author:
+    - family: Déharbe
+      given: David
+    - family: Fontaine
+      given: Pascal
+    - family: Guyot
+      given: Yoann
+    - family: Voisin
+      given: Laurent
+  issued:
+    year: 2014
+  container-title: "Science of Computer Programming"
+  volume: 94
+  page: 130-143
+  DOI: 10.1016/j.scico.2014.04.012
+
+- id: lamport1994tla
+  type: article-journal
+  title: "The Temporal Logic of Actions"
+  author:
+    - family: Lamport
+      given: Leslie
+  issued:
+    year: 1994
+  container-title: "ACM Transactions on Programming Languages and Systems"
+  volume: 16
+  issue: 3
+  page: 872-923
+  DOI: 10.1145/177492.177726
+
+- id: lamport2002specifying-systems
+  type: book
+  title: "Specifying Systems: The TLA+ Language and Tools for Hardware and Software Engineers"
+  author:
+    - family: Lamport
+      given: Leslie
+  issued:
+    year: 2002
+  publisher: "Addison-Wesley"
+  ISBN: "0-321-14306-X"
+  URL: "https://lamport.azurewebsites.net/tla/book.html"
+
+- id: tla2
+  type: webpage
+  title: "TLA+ Version 2"
+  author:
+    - family: Lamport
+      given: Leslie
+  URL: "https://lamport.azurewebsites.net/tla/tla2.html"
+
+- id: merz2007tla
+  type: chapter
+  title: "The Specification Language TLA+"
+  author:
+    - family: Merz
+      given: Stephan
+  editor:
+    - family: Bjørner
+      given: Dines
+    - family: Henson
+      given: Martin C.
+  issued:
+    year: 2007
+  container-title: "Logics of Specification Languages"
+  page: 401-451
+  publisher: Springer
+  DOI: 10.1007/978-3-540-74107-7_8
+
+- id: kukovec2020type-inference-tla
+  type: paper-conference
+  title: "Type Inference for TLA+ in Apalache"
+  author:
+    - family: Kukovec
+      given: Jure
+    - family: Konnov
+      given: Igor
+  issued:
+    year: 2020
+  container-title: "TLA+ Community Event"
+  URL: "https://conf.tlapl.us/2020/07-Kukovec_and_Konnov-Type_Inference_for_TLA_%2B_in_Apalache.pdf"
+
+- id: cirstea2024traces-tla
+  type: article
+  title: "Validating Traces of Distributed Programs Against TLA+ Specifications"
+  author:
+    - family: Cirstea
+      given: Horatiu
+    - family: Kuppe
+      given: Markus A.
+    - family: Loillier
+      given: Benjamin
+    - family: Merz
+      given: Stephan
+  issued:
+    year: 2024
+  archive: arXiv
+  archive_location: "2404.16075"
+  DOI: 10.48550/arXiv.2404.16075
+
+- id: lamport2009pluscal
+  type: report
+  title: "The PlusCal Algorithm Language"
+  author:
+    - family: Lamport
+      given: Leslie
+  issued:
+    year: 2009
+  URL: "https://lamport.azurewebsites.net/pubs/pluscal.pdf"
+
+- id: lopez2026bdikit
+  type: article-journal
+  title: "BDI-Kit: An AI-powered toolkit for biomedical data harmonization"
+  author:
+    - family: Lopez
+      given: Roque
+    - family: Santos
+      given: Aécio
+    - family: Koutras
+      given: Christos
+    - family: Freire
+      given: Juliana
+  issued:
+    year: 2026
+  container-title: Patterns
+  volume: 7
+  page: 101470
+  DOI: 10.1016/j.patter.2025.101470
