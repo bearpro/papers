@@ -707,6 +707,203 @@ references:
     URL: "https://doi.org/10.1145/1066157.1066283"
     language: en
 
+  - id: prokazin-mdl
+    type: webpage
+    author:
+      - family: Проказин
+        given: Михаил Русланович
+    title: "Публичный репозиторий с исходным кодом MDL"
+    genre: "репозиторий GitHub"
+    URL: "https://github.com/bearpro/standard-contradictions/tree/master/mdl"
+
+  - id: fowler2010dsl
+    type: book
+    title: "Domain-Specific Languages"
+    author:
+      - family: Fowler
+        given: Martin
+      - family: Parsons
+        given: Rebecca
+    issued:
+      year: 2010
+    publisher: "Addison-Wesley Professional"
+    ISBN: "978-0-321-71294-3"
+    URL: "https://martinfowler.com/books/dsl.html"
+
+  - id: degiacomo2013ltlf
+    type: paper-conference
+    title: "Linear Temporal Logic and Linear Dynamic Logic on Finite Traces"
+    author:
+      - family: "De Giacomo"
+        given: Giuseppe
+      - family: Vardi
+        given: "Moshe Y."
+    issued:
+      year: 2013
+    container-title: "Proceedings of the Twenty-Third International Joint Conference on Artificial Intelligence"
+    publisher: "AAAI Press"
+    page: "854-860"
+    URL: "https://www.cs.rice.edu/~vardi/papers/ijcai13.pdf"
+
+  - id: governatori2018practical
+    type: chapter
+    title: "Practical Normative Reasoning with Defeasible Deontic Logic"
+    author:
+      - family: Governatori
+        given: Guido
+    issued:
+      year: 2018
+    container-title: "Reasoning Web. Learning, Uncertainty, Streaming, and Scalability"
+    collection-title: "Lecture Notes in Computer Science"
+    volume: "11078"
+    publisher: Springer
+    publisher-place: Cham
+    page: "1-25"
+    DOI: "10.1007/978-3-030-00338-8_1"
+    URL: "https://doi.org/10.1007/978-3-030-00338-8_1"
+
+  - id: governatori2013permissions
+    type: article-journal
+    title: "Computing Strong and Weak Permissions in Defeasible Logic"
+    author:
+      - family: Governatori
+        given: Guido
+      - family: Olivieri
+        given: Francesco
+      - family: Rotolo
+        given: Antonino
+      - family: Scannapieco
+        given: Simone
+    issued:
+      year: 2013
+    container-title: "Journal of Philosophical Logic"
+    volume: "42"
+    issue: "6"
+    page: "799-829"
+    DOI: "10.1007/s10992-013-9295-1"
+    URL: "https://doi.org/10.1007/s10992-013-9295-1"
+
+  - id: milner1978polymorphism
+    type: article-journal
+    title: "A Theory of Type Polymorphism in Programming"
+    author:
+      - family: Milner
+        given: Robin
+    issued:
+      year: 1978
+      month: 12
+    container-title: "Journal of Computer and System Sciences"
+    volume: "17"
+    issue: "3"
+    page: "348-375"
+    DOI: "10.1016/0022-0000(78)90014-4"
+    URL: "https://doi.org/10.1016/0022-0000(78)90014-4"
+
+  - id: milner1997sml
+    type: book
+    title: "The Definition of Standard ML: Revised"
+    author:
+      - family: Milner
+        given: Robin
+      - family: Tofte
+        given: Mads
+      - family: Harper
+        given: Robert
+      - family: MacQueen
+        given: David
+    issued:
+      year: 1997
+    publisher: "MIT Press"
+    publisher-place: "Cambridge, MA"
+    ISBN: "0-262-63181-4"
+    URL: "https://smlfamily.github.io/sml97-defn.pdf"
+
+  - id: gotel1994traceability
+    type: paper-conference
+    title: "An Analysis of the Requirements Traceability Problem"
+    author:
+      - family: Gotel
+        given: "Orlena C. Z."
+      - family: Finkelstein
+        given: "Anthony C. W."
+    issued:
+      year: 1994
+    container-title: "Proceedings of the First International Conference on Requirements Engineering"
+    publisher: "IEEE Computer Society"
+    page: "94-101"
+    URL: "https://discovery.ucl.ac.uk/id/eprint/749/"
+
+  - id: do2002coma
+    type: paper-conference
+    title: "COMA: A System for Flexible Combination of Schema Matching Approaches"
+    author:
+      - family: Do
+        given: Hong-Hai
+      - family: Rahm
+        given: Erhard
+    issued:
+      year: 2002
+    container-title: "Proceedings of the 28th International Conference on Very Large Data Bases"
+    publisher: "VLDB Endowment"
+    page: "610-621"
+    URL: "https://www.vldb.org/conf/2002/S17P03.pdf"
+
+  - id: alkhammash2015traceable-eventb
+    type: article-journal
+    title: "Building Traceable Event-B Models from Requirements"
+    author:
+      - family: Alkhammash
+        given: Eman
+      - family: Butler
+        given: Michael
+      - family: Fathabadi
+        given: "Asieh Salehi"
+      - family: Cîrstea
+        given: Corina
+    issued:
+      year: 2015
+    container-title: "Science of Computer Programming"
+    volume: "111"
+    page: "318-338"
+    DOI: "10.1016/j.scico.2015.06.002"
+
+  - id: lopez2026bdikit
+    type: article-journal
+    title: "BDI-Kit: An AI-powered toolkit for biomedical data harmonization"
+    author:
+      - family: Lopez
+        given: Roque
+      - family: Santos
+        given: Aécio
+      - family: Koutras
+        given: Christos
+      - family: Freire
+        given: Juliana
+    issued:
+      year: 2026
+    container-title: Patterns
+    volume: "7"
+    page: "101470"
+    DOI: "10.1016/j.patter.2025.101470"
+
+  - id: rfc2026
+    type: webpage
+    author:
+      - family: Bradner
+        given: Scott
+    title: "The Internet Standards Process -- Revision 3"
+    genre: "RFC 2026"
+    publisher: "RFC Editor"
+    issued:
+      year: 1996
+      month: 10
+    URL: "https://www.rfc-editor.org/rfc/rfc2026"
+    accessed:
+      year: 2026
+      month: 5
+      day: 16
+    language: en
+
   - id: github
     type: webpage
     author:

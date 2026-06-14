@@ -7,9 +7,8 @@ input-files:
   - ${.}/chapters/02-analysis.md
   - ${.}/chapters/03-algorithms.md
   - ${.}/chapters/04-implemntation.md
-  - ${.}/chapters/05-approbation.md
-  - ${.}/chapters/06-conclusion.md
-  - ${.}/chapters/07-refs.md
+  - ${.}/chapters/05-conclusion.md
+  - ${.}/chapters/06-refs.md
 
 citeproc: true
 
