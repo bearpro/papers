@@ -917,3 +917,363 @@ references:
       month: 4
       day: 30
     language: ru
+
+  - id: mally1926-grundgesetze-sollens
+    type: book
+    author:
+      - family: Mally
+        given: Ernst
+    title: "Grundgesetze des Sollens: Elemente der Logik des Willens"
+    publisher: "Leuschner & Lubensky"
+    publisher-place: "Graz"
+    issued:
+      year: 1926
+    language: de
+
+  - id: von-wright1951-deontic-logic
+    type: article-journal
+    author:
+      - family: von Wright
+        given: "Georg Henrik"
+    title: "Deontic Logic"
+    container-title: "Mind"
+    volume: "60"
+    issue: "237"
+    page: "1-15"
+    issued:
+      year: 1951
+    DOI: "10.1093/mind/LX.237.1"
+    language: en
+
+  - id: prior1957-time-and-modality
+    type: book
+    author:
+      - family: Prior
+        given: "Arthur N."
+    title: "Time and Modality"
+    publisher: "Clarendon Press"
+    publisher-place: "Oxford"
+    issued:
+      year: 1957
+    language: en
+
+  - id: kripke1963-semantical-analysis-modal-logic
+    type: article-journal
+    author:
+      - family: Kripke
+        given: "Saul A."
+    title: "Semantical Analysis of Modal Logic I: Normal Modal Propositional Calculi"
+    container-title: "Zeitschrift für mathematische Logik und Grundlagen der Mathematik"
+    volume: "9"
+    issue: "5-6"
+    page: "67-96"
+    issued:
+      year: 1963
+    DOI: "10.1002/malq.19630090502"
+    language: en
+
+  - id: pnueli1977-temporal-logic-programs
+    type: paper-conference
+    author:
+      - family: Pnueli
+        given: Amir
+    title: "The Temporal Logic of Programs"
+    container-title: "Proceedings of the 18th Annual Symposium on Foundations of Computer Science"
+    publisher: "IEEE Computer Society"
+    page: "46-57"
+    issued:
+      year: 1977
+    DOI: "10.1109/SFCS.1977.32"
+    URL: "https://doi.org/10.1109/SFCS.1977.32"
+    language: en
+
+  - id: floyd1967-assigning-meanings
+    type: chapter
+    author:
+      - family: Floyd
+        given: "Robert W."
+    title: "Assigning Meanings to Programs"
+    container-title: "Mathematical Aspects of Computer Science"
+    collection-title: "Proceedings of Symposia in Applied Mathematics"
+    volume: "19"
+    publisher: "American Mathematical Society"
+    page: "19-32"
+    issued:
+      year: 1967
+    language: en
+
+  - id: hoare1969-axiomatic-basis
+    type: article-journal
+    author:
+      - family: Hoare
+        given: "C. A. R."
+    title: "An Axiomatic Basis for Computer Programming"
+    container-title: "Communications of the ACM"
+    volume: "12"
+    issue: "10"
+    page: "576-580, 583"
+    issued:
+      year: 1969
+      month: 10
+    DOI: "10.1145/363235.363259"
+    URL: "https://doi.org/10.1145/363235.363259"
+    language: en
+
+  - id: dijkstra1976-discipline
+    type: book
+    author:
+      - family: Dijkstra
+        given: "Edsger W."
+    title: "A Discipline of Programming"
+    publisher: "Prentice-Hall"
+    publisher-place: "Englewood Cliffs, NJ"
+    issued:
+      year: 1976
+    ISBN: "0-13-215871-X"
+    language: en
+
+  - id: clarke-emerson1982-synchronization-skeletons
+    type: chapter
+    author:
+      - family: Clarke
+        given: "Edmund M."
+      - family: Emerson
+        given: "E. Allen"
+    title: "Design and Synthesis of Synchronization Skeletons Using Branching-Time Temporal Logic"
+    container-title: "Logics of Programs"
+    collection-title: "Lecture Notes in Computer Science"
+    volume: "131"
+    publisher: "Springer"
+    publisher-place: "Berlin, Heidelberg"
+    page: "52-71"
+    issued:
+      year: 1982
+    DOI: "10.1007/BFb0025774"
+    URL: "https://doi.org/10.1007/BFb0025774"
+    language: en
+
+  - id: queille-sifakis1982-cesar
+    type: chapter
+    author:
+      - family: Queille
+        given: "Jean-Pierre"
+      - family: Sifakis
+        given: Joseph
+    title: "Specification and Verification of Concurrent Systems in CESAR"
+    container-title: "International Symposium on Programming"
+    collection-title: "Lecture Notes in Computer Science"
+    volume: "137"
+    publisher: "Springer"
+    publisher-place: "Berlin, Heidelberg"
+    page: "337-351"
+    issued:
+      year: 1982
+    DOI: "10.1007/3-540-11494-7_22"
+    URL: "https://doi.org/10.1007/3-540-11494-7_22"
+    language: en
+
+  - id: clarke-grumberg-peled1999-model-checking
+    type: book
+    author:
+      - family: Clarke
+        given: "Edmund M."
+      - family: Grumberg
+        given: Orna
+      - family: Peled
+        given: "Doron A."
+    title: "Model Checking"
+    publisher: "MIT Press"
+    publisher-place: "Cambridge, MA"
+    issued:
+      year: 1999
+    ISBN: "978-0-262-03270-4"
+    language: en
+
+  - id: iso-about
+    type: webpage
+    author:
+      - literal: "International Organization for Standardization"
+    title: "About ISO"
+    URL: "https://www.iso.org/about"
+    accessed:
+      year: 2026
+      month: 6
+      day: 14
+    language: en
+
+  - id: iec-history
+    type: webpage
+    author:
+      - literal: "International Electrotechnical Commission"
+    title: "History"
+    URL: "https://www.iec.ch/history"
+    accessed:
+      year: 2026
+      month: 6
+      day: 14
+    language: en
+
+  - id: gost-history
+    type: webpage
+    author:
+      - literal: "Федеральное агентство по техническому регулированию и метрологии"
+    title: "History"
+    URL: "https://www.gost.ru/portal/eng/home/about/history"
+    accessed:
+      year: 2026
+      month: 6
+      day: 14
+    language: en
+
+  - id: wto-tbt-agreement
+    type: legislation
+    author:
+      - literal: "World Trade Organization"
+    title: "Agreement on Technical Barriers to Trade"
+    URL: "https://www.wto.org/english/docs_e/legal_e/17-tbt.pdf"
+    issued:
+      year: 1995
+    accessed:
+      year: 2026
+      month: 6
+      day: 14
+    language: en
+
+  - id: iso-iec-smart-standards
+    type: webpage
+    author:
+      - literal: "IEC/ISO"
+    title: "SMART Standards"
+    URL: "https://www.iso.org/smart"
+    accessed:
+      year: 2026
+      month: 6
+      day: 14
+    language: en
+
+  - id: iso-8807-lotos
+    type: standard
+    author:
+      - literal: "International Organization for Standardization"
+    title: "Information processing systems — Open Systems Interconnection — LOTOS — A formal description technique based on the temporal ordering of observational behaviour"
+    number: "ISO 8807:1989"
+    issued:
+      year: 1989
+    URL: "https://www.iso.org/standard/16258.html"
+    language: en
+
+  - id: iso-9074-estelle
+    type: standard
+    author:
+      - literal: "International Organization for Standardization"
+    title: "Information processing systems — Open Systems Interconnection — Estelle: A formal description technique based on an extended state transition model"
+    number: "ISO 9074:1989"
+    issued:
+      year: 1989
+    URL: "https://www.iso.org/standard/16659.html"
+    language: en
+
+  - id: itu-z100-sdl
+    type: standard
+    author:
+      - literal: "International Telecommunication Union"
+    title: "Specification and Description Language — Overview of SDL-2010"
+    number: "ITU-T Z.100"
+    issued:
+      year: 2021
+      month: 6
+      day: 13
+    URL: "https://www.itu.int/rec/t-rec-z.100"
+    language: en
+
+  - id: itu-z110
+    type: standard
+    author:
+      - literal: "International Telecommunication Union"
+    title: "Criteria for use of formal description techniques by ITU-T"
+    number: "ITU-T Z.110"
+    issued:
+      year: 2008
+      month: 11
+      day: 13
+    URL: "https://www.itu.int/rec/T-REC-Z.110/en"
+    language: en
+
+  - id: iso-iec-10746-4-odp
+    type: standard
+    author:
+      - literal: "International Organization for Standardization"
+      - literal: "International Electrotechnical Commission"
+      - literal: "International Telecommunication Union"
+    title: "Information technology — Open Distributed Processing — Reference Model: Architectural semantics"
+    number: "ISO/IEC 10746-4:1998 | ITU-T X.904"
+    issued:
+      year: 1998
+    URL: "https://www.iso.org/obp/ui/#iso:std:iso-iec:10746:-4:ed-1:v1:en"
+    language: en
+
+  - id: iso-10303-11-express
+    type: standard
+    author:
+      - literal: "International Organization for Standardization"
+    title: "Industrial automation systems and integration — Product data representation and exchange — Part 11: Description methods: The EXPRESS language reference manual"
+    number: "ISO 10303-11:2004"
+    issued:
+      year: 2004
+    URL: "https://www.iso.org/standard/38047.html"
+    language: en
+
+  - id: buildingsmart-ids
+    type: webpage
+    author:
+      - literal: "buildingSMART International"
+    title: "Information Delivery Specification (IDS)"
+    URL: "https://www.buildingsmart.org/standards/bsi-standards/information-delivery-specification-ids/"
+    accessed:
+      year: 2026
+      month: 6
+      day: 14
+    language: en
+
+  - id: griesser2005-model-driven-standards
+    type: paper-conference
+    author:
+      - family: Griesser
+        given: Arthur
+    title: "A Model Driven Standards Process"
+    container-title: "Semi Spring Standards Meeting"
+    publisher: "National Institute of Standards and Technology"
+    issued:
+      year: 2005
+      month: 4
+      day: 1
+    URL: "https://www.nist.gov/publications/model-driven-standards-process"
+    accessed:
+      year: 2026
+      month: 6
+      day: 14
+    language: en
+
+  - id: grinevich-etal-2006-formal-methods-standards
+    type: article-journal
+    author:
+      - family: Гриневич
+        given: "А. И."
+      - family: Кулямин
+        given: "В. В."
+      - family: Марковцев
+        given: "Д. А."
+      - family: Петренко
+        given: "А. К."
+      - family: Рубанов
+        given: "В. В."
+      - family: Хорошилов
+        given: "А. В."
+    title: "Использование формальных методов для обеспечения соблюдения программных стандартов"
+    container-title: "Труды Института системного программирования РАН"
+    volume: "10"
+    page: "51-68"
+    issued:
+      year: 2006
+    URL: "https://www.ispras.ru/proceedings/docs/2006/10/isp_10_2006_51.pdf"
+    language: ru
