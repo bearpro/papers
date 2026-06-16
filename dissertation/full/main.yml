@@ -6,7 +6,7 @@ input-files:
   - ${.}/chapters/01-introduction.md
   - ${.}/chapters/02-analysis.md
   - ${.}/chapters/03-algorithms.md
-  - ${.}/chapters/04-implemntation.md
+  - ${.}/chapters/04-implementation.md
   - ${.}/chapters/05-conclusion.md
   - ${.}/chapters/06-refs.md
 
