@@ -21,6 +21,11 @@
             plantuml
             pandoc-plantuml-filter
             texlive.combined.scheme-medium
+
+            (pkgs.python3.withPackages (pythonPkgs: [
+              pythonPkgs.python-docx
+              (pythonPkgs.callPackage ./.nix/docxcompose.nix { })
+            ]))
           ];
         };
       });
