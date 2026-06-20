@@ -54,6 +54,7 @@ dissertation-summary: _out-dir
 		--katex \
 		--filter pandoc-plantuml \
 		--reference-doc='./reference/mk-623ri-reference.docx' \
+		--lua-filter='./reference/pandoc-inline-code-comments.lua' \
 		--lua-filter='./reference/mk-623ri.lua' \
 		--resource-path='./dissertation/extended-summary' \
 		-o './out/Проказин, Автореферат к диссертации (без титульника).docx'
