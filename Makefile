@@ -56,7 +56,7 @@ dissertation-summary: _out-dir
 		--reference-doc='./reference/mk-623ri-reference.docx' \
 		--lua-filter='./reference/pandoc-inline-code-comments.lua' \
 		--lua-filter='./reference/mk-623ri.lua' \
-		--resource-path='./dissertation/extended-summary' \
+		--resource-path='./dissertation/extended-summary/' \
 		-o './out/Проказин, Автореферат к диссертации (без титульника).docx'
 	python3 ./dissertation/extended-summary/scripts/concat-docx.py \
 		'./out/Проказин, Автореферат к диссертации (без титульника).docx:2' \

@@ -21,6 +21,7 @@
             plantuml
             pandoc-plantuml-filter
             texlive.combined.scheme-medium
+            librsvg
 
             (pkgs.python3.withPackages (pythonPkgs: [
               pythonPkgs.python-docx
