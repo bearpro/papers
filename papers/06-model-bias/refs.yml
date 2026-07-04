@@ -1,0 +1,278 @@
+references:
+  - id: prokazin-mdl
+    type: manuscript
+    title: "MDL: рабочая спецификация языка моделирования нормативных правил"
+    author:
+      - family: "Проказин"
+        given: "М. Р."
+      - family: "Теремов"
+        given: "И. А."
+    issued:
+      date-parts:
+        - [2026]
+    note: "Внутренняя рабочая спецификация; библиографические данные следует уточнить перед публикацией."
+
+  - id: koreeda-contractnli
+    type: paper-conference
+    title: "ContractNLI: A Dataset for Document-level Natural Language Inference for Contracts"
+    author:
+      - family: Koreeda
+        given: Yuta
+      - family: Manning
+        given: Christopher D.
+    container-title: "Findings of the Association for Computational Linguistics: EMNLP 2021"
+    publisher: "Association for Computational Linguistics"
+    page: "1907-1919"
+    issued:
+      date-parts:
+        - [2021, 11]
+    DOI: "10.18653/v1/2021.findings-emnlp.164"
+    URL: "https://aclanthology.org/2021.findings-emnlp.164/"
+
+  - id: sathvik-dsl-generation
+    type: article-journal
+    title: "A Survey on LLM-based Code Generation for Low-Resource and Domain-Specific Programming Languages"
+    author:
+      - family: Joel
+        given: Sathvik
+      - family: Wu
+        given: Jie JW
+      - family: Fard
+        given: Fatemeh H.
+    container-title: "ACM Transactions on Software Engineering and Methodology"
+    issued:
+      date-parts:
+        - [2025]
+    DOI: "10.1145/3770084"
+    URL: "https://doi.org/10.1145/3770084"
+    note: "Also available as arXiv:2410.03981."
+
+  - id: giagnorio-no-silver-bullet
+    type: paper-conference
+    title: "Enhancing Code Generation for Low-Resource Languages: No Silver Bullet"
+    author:
+      - family: Giagnorio
+        given: Alessandro
+      - family: Martin-Lopez
+        given: Alberto
+      - family: Bavota
+        given: Gabriele
+    container-title: "2025 IEEE/ACM 33rd International Conference on Program Comprehension (ICPC)"
+    page: "478-488"
+    issued:
+      date-parts:
+        - [2025]
+    DOI: "10.1109/ICPC66645.2025.00058"
+    URL: "https://arxiv.org/abs/2501.19085"
+
+  - id: bassamzadeh-dsl-generation-rag
+    type: article
+    title: "A Comparative Study of DSL Code Generation: Fine-Tuning vs. Optimized Retrieval Augmentation"
+    author:
+      - family: Bassamzadeh
+        given: Nastaran
+      - family: Methani
+        given: Chhaya
+    issued:
+      date-parts:
+        - [2024, 7, 3]
+    archive: arXiv
+    archive_location: "2407.02742"
+    URL: "https://arxiv.org/abs/2407.02742"
+
+  - id: kozachok-text2dsl
+    type: article
+    title: "Text2DSL: LLM-Based Code Generation for Domain-Specific Languages"
+    author:
+      - family: Kozachok
+        given: Alexander V.
+      - family: Nazimov
+        given: Alexander M.
+      - family: Magomedov
+        given: Shamil G.
+    issued:
+      date-parts:
+        - [2026, 6]
+    archive: arXiv
+    archive_location: "2606.22586"
+    URL: "https://arxiv.org/abs/2606.22586"
+
+  - id: wang-grammar-prompting
+    type: paper-conference
+    title: "Grammar Prompting for Domain-Specific Language Generation with Large Language Models"
+    author:
+      - family: Wang
+        given: Bailin
+      - family: Wang
+        given: Zi
+      - family: Wang
+        given: Xuezhi
+      - family: Cao
+        given: Yuan
+      - family: Saurous
+        given: Rif A.
+      - family: Kim
+        given: Yoon
+    container-title: "Advances in Neural Information Processing Systems 36"
+    page: "65030-65055"
+    issued:
+      date-parts:
+        - [2023]
+    URL: "https://arxiv.org/abs/2305.19234"
+
+  - id: jiaye-wang-computer-parsable
+    type: article
+    title: "Guiding Large Language Models to Generate Computer-Parsable Content"
+    author:
+      - family: Wang
+        given: Jiaye
+    issued:
+      date-parts:
+        - [2024]
+    archive: arXiv
+    archive_location: "2404.05499"
+    URL: "https://arxiv.org/abs/2404.05499"
+
+  - id: netz-grammar-masking
+    type: paper-conference
+    title: "Using Grammar Masking to Ensure Syntactic Validity in LLM-based Modeling Tasks"
+    author:
+      - family: Netz
+        given: Lukas
+      - family: Reimer
+        given: Jan
+      - family: Rumpe
+        given: Bernhard
+    container-title: "MODELS Companion 2024"
+    page: "115-122"
+    issued:
+      date-parts:
+        - [2024]
+    DOI: "10.1145/3652620.3687805"
+    URL: "https://arxiv.org/abs/2407.06146"
+
+  - id: vinayshekhar-unseen-language
+    type: article
+    title: "Syntax Without Semantics: Teaching Large Language Models to Code in an Unseen Language"
+    author:
+      - family: Kumar
+        given: Vinayshekhar Bannihatti
+      - family: Makhija
+        given: Disha
+      - family: Arivazhagan
+        given: Manoj Ghuhan
+      - family: Gangadharaiah
+        given: Rashmi
+    issued:
+      date-parts:
+        - [2026, 5, 15]
+    archive: arXiv
+    archive_location: "2605.15607"
+    URL: "https://arxiv.org/abs/2605.15607"
+
+  - id: netz-unintended-changes
+    type: paper-conference
+    title: "Unintended Changes: How LLMs Corrupt and Correct Textual Models"
+    author:
+      - family: Netz
+        given: Lukas
+      - family: Kampe
+        given: Finn
+      - family: Reimer
+        given: Jan
+      - family: Rumpe
+        given: Bernhard
+    container-title: "2025 ACM/IEEE 28th International Conference on Model Driven Engineering Languages and Systems Companion (MODELS-C)"
+    page: "636-645"
+    issued:
+      date-parts:
+        - [2025, 10]
+    DOI: "10.1109/MODELS-C68889.2025.00087"
+    URL: "https://www.se-rwth.de/publications/Unintended-Changes-How-LLMs-Corrupt-and-Correct-Textual-Models.pdf"
+
+  - id: yang-intercode
+    type: paper-conference
+    title: "InterCode: Standardizing and Benchmarking Interactive Coding with Execution Feedback"
+    author:
+      - family: Yang
+        given: John
+      - family: Prabhakar
+        given: Akshara
+      - family: Narasimhan
+        given: Karthik
+      - family: Yao
+        given: Shunyu
+    container-title: "Advances in Neural Information Processing Systems 36: Datasets and Benchmarks Track"
+    issued:
+      date-parts:
+        - [2023]
+    URL: "https://arxiv.org/abs/2306.14898"
+
+  - id: dai-feedbackeval
+    type: article
+    title: "FeedbackEval: A Benchmark for Evaluating Large Language Models in Feedback-Driven Code Repair Tasks"
+    author:
+      - family: Dai
+        given: Dekun
+      - family: Liu
+        given: MingWei
+      - family: Li
+        given: Anji
+      - family: Cao
+        given: Jialun
+      - family: Wang
+        given: Yanlin
+      - family: Wang
+        given: Chong
+      - family: Peng
+        given: Xin
+      - family: Zheng
+        given: Zibin
+    issued:
+      date-parts:
+        - [2025, 4, 9]
+    archive: arXiv
+    archive_location: "2504.06939"
+    URL: "https://arxiv.org/abs/2504.06939"
+
+  - id: go-lsprag
+    type: paper-conference
+    title: "LSPRAG: LSP-Guided RAG for Language-Agnostic Real-Time Unit Test Generation"
+    author:
+      - family: Go
+        given: Gwihwan
+      - family: Zhang
+        given: Quan
+      - family: Zhou
+        given: Chijin
+      - family: Wei
+        given: Zhao
+      - family: Jiang
+        given: Yu
+    container-title: "ICSE 2026"
+    issued:
+      date-parts:
+        - [2026]
+    archive: arXiv
+    archive_location: "2510.22210"
+    URL: "https://arxiv.org/abs/2510.22210"
+
+  - id: agrawal-monitor-guided
+    type: paper-conference
+    title: "Guiding Language Models of Code with Global Context using Monitors"
+    author:
+      - family: Agrawal
+        given: Lakshya A.
+      - family: Kanade
+        given: Aditya
+      - family: Goyal
+        given: Navin
+      - family: Lahiri
+        given: Shuvendu K.
+      - family: Rajamani
+        given: Sriram K.
+    container-title: "Advances in Neural Information Processing Systems 36"
+    issued:
+      date-parts:
+        - [2023]
+    URL: "https://arxiv.org/abs/2306.10763"

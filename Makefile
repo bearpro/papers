@@ -40,6 +40,17 @@ mdl-design: _out-dir
 		--highlight-style=tango \
 		-o './out/Проказин, Дизайн MDL.docx'
 
+llm-bias: _out-dir
+	pandoc './papers/06-model-bias/paper.md' \
+		--katex \
+		--resource-path='./papers/06-model-bias/' \
+		--citeproc \
+		--filter pandoc-plantuml \
+		--reference-doc='./reference/mk-623ri-reference.docx' \
+		--lua-filter='./reference/mk-623ri.lua' \
+		--highlight-style=tango \
+		-o './out/Проказин, Систематические ошибки LLM в DSL.docx'
+
 dissertation-full: _out-dir
 	pandoc --defaults ./dissertation/full/main.yml \
 		--katex \
