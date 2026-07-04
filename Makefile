@@ -47,7 +47,11 @@ dissertation-full: _out-dir
 		--reference-doc='./reference/mk-623ri-reference.docx' \
 		--lua-filter='./reference/mk-623ri.lua' \
 		--resource-path='./dissertation/full/' \
-		-o './out/Проказин, Автореферат к диссертации.docx'
+		-o './out/Проказин, Текст диссертации (без титульника).docx'
+	python3 ./dissertation/extended-summary/scripts/concat-docx.py \
+		'./out/Проказин, Текст диссертации (без титульника).docx:2' \
+		'./dissertation/full/assets/title-pages.docx:1' \
+		'./out/Проказин, Текст диссертации.docx'
 
 dissertation-summary: _out-dir
 	pandoc ./dissertation/extended-summary/main.md \
